@@ -1,5 +1,10 @@
 package af.asr.epay.infrastructure;
 
+import af.asr.epay.svip.config.CustomErrorDecoder;
+import feign.Logger;
+import feign.RequestInterceptor;
+import feign.codec.ErrorDecoder;
+import okhttp3.OkHttpClient;
 import org.keycloak.adapters.springsecurity.client.KeycloakClientRequestFactory;
 import org.keycloak.adapters.springsecurity.client.KeycloakRestTemplate;
 import org.keycloak.admin.client.Keycloak;
@@ -10,6 +15,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -44,6 +50,30 @@ public class ApplicationConfiguration {
     @PostConstruct
     public void init(){
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));   // It will set UTC timezone
+    }
+
+    @Bean
+    public RequestInterceptor requestInterceptor() {
+        return requestTemplate -> {
+            requestTemplate.header("user", keycloackUser);
+            requestTemplate.header("password", keycloackUser);
+            requestTemplate.header("Accept", MediaType.APPLICATION_JSON_VALUE);
+        };
+    }
+
+    @Bean
+    public ErrorDecoder errorDecoder() {
+        return new CustomErrorDecoder();
+    }
+
+    @Bean
+    Logger.Level feignLoggerLevel() {
+        return Logger.Level.BASIC;
+    }
+
+    @Bean
+    public OkHttpClient client() {
+        return new OkHttpClient();
     }
 
 

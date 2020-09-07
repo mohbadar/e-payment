@@ -8,6 +8,7 @@ import org.keycloak.KeycloakSecurityContext;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.admin.client.resource.*;
 import org.keycloak.authorization.client.AuthzClient;
+import org.keycloak.representations.AccessToken;
 import org.keycloak.representations.AccessTokenResponse;
 import org.keycloak.representations.idm.CredentialRepresentation;
 import org.keycloak.representations.idm.RoleRepresentation;
@@ -74,6 +75,11 @@ public class UserManagementService {
 
         return user;
     }
+
+    public AccessToken getLoggedInUser() {
+        return keycloakSecurityContext.getToken();
+    }
+
 
     public UsersResource getUsers() {
         Keycloak keycloak = Keycloak.getInstance(keycloakServerUrl, keycloackRealm, keycloackUser, keycloackPassword,
@@ -171,13 +177,18 @@ public class UserManagementService {
 
     public AccessTokenResponse authenticate(LoginDTO dto)
     {
-        // create a new instance based on the configuration defined in keycloak-authz.json
         AuthzClient authzClient = AuthzClient.create();
-
                 // send the authorization request to the server in order to
             // obtain an access token granted to the user
         AccessTokenResponse response = authzClient.obtainAccessToken(dto.getUsername(), dto.getPassword());
 
         return response;
+    }
+
+    public String authenticate(String username, String password)
+    {
+        Keycloak keycloak = Keycloak.getInstance(keycloakServerUrl, keycloackRealm, username, password,
+                "admin-cli");
+        return keycloak.tokenManager().getAccessTokenString();
     }
 }

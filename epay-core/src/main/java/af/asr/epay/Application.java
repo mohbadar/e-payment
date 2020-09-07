@@ -1,6 +1,8 @@
 package af.asr.epay;
 
 import af.asr.epay.infrastructure.internationalization.Translator;
+import af.asr.epay.infrastructure.usermanagement.domain.LoginDTO;
+import af.asr.epay.infrastructure.usermanagement.service.UserManagementService;
 import af.gov.anar.core.applicationname.EnableApplicationName;
 import it.ozimov.springboot.mail.configuration.EnableEmailTools;
 import org.springframework.boot.SpringApplication;
@@ -30,8 +32,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableTransactionManagement
 @EnableEmailTools
 public class Application extends SpringBootServletInitializer{
+
         public static void main(String[] args) {
                 SpringApplication.run(Application.class, args);
-                System.out.println("Internationalization>  "+ Translator.toLocale("welcome"));
         }
 }

@@ -1,5 +1,6 @@
 package af.asr.epay.infrastructure.usermanagement.controller;
 
+import af.asr.epay.infrastructure.usermanagement.domain.LoginDTO;
 import af.asr.epay.infrastructure.usermanagement.service.UserManagementService;
 import af.gov.anar.api.handler.ResponseHandler;
 import af.asr.epay.infrastructure.usermanagement.domain.UserDTO;
@@ -14,13 +15,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/api/config/user-management")
+@RequestMapping(value = "/api/auth")
 public class UserManagementController extends ResponseHandler {
 
     @Autowired
     private UserManagementService userManagementService;
 
-    @PostMapping(value = "user-role-relation", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/user-role-relation", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> save(@RequestBody(required = true) UserRoleRelationDTO dto) {
         Map<String, Object> response = new HashMap<>();
         response.put("user", userManagementService.assignUserRole(dto));
@@ -40,6 +41,14 @@ public class UserManagementController extends ResponseHandler {
     public ResponseEntity<Map<String, Object>> getUsers() {
         Map<String, Object> response = new HashMap<>();
         response.put("users", userManagementService.getUsers().list());
+        response.put("status", HttpStatus.OK);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping(value = "/users/my-token", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String, Object>> getMyToken() {
+        Map<String, Object> response = new HashMap<>();
+        response.put("access_token", userManagementService.getLoggedInUser());
         response.put("status", HttpStatus.OK);
         return ResponseEntity.ok(response);
     }
@@ -99,5 +108,13 @@ public class UserManagementController extends ResponseHandler {
         response.put("status", HttpStatus.OK);
         return ResponseEntity.ok(response);
     }
+
+    @PostMapping(value = "/authenticate", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String authenticate(@RequestBody LoginDTO dto)
+    {
+        System.out.println("Login DTO > "+ dto.getUsername());
+        return userManagementService.authenticate(dto.getUsername(), dto.getPassword());
+    }
+
 
 }

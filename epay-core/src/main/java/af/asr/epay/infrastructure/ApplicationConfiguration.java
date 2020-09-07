@@ -1,5 +1,7 @@
 package af.asr.epay.infrastructure;
 
+import af.asr.epay.infrastructure.usermanagement.domain.LoginDTO;
+import af.asr.epay.infrastructure.usermanagement.service.UserManagementService;
 import af.asr.epay.svip.config.CustomErrorDecoder;
 import feign.Logger;
 import feign.RequestInterceptor;
@@ -8,6 +10,8 @@ import okhttp3.OkHttpClient;
 import org.keycloak.adapters.springsecurity.client.KeycloakClientRequestFactory;
 import org.keycloak.adapters.springsecurity.client.KeycloakRestTemplate;
 import org.keycloak.admin.client.Keycloak;
+import org.keycloak.admin.client.resource.KeyResource;
+import org.keycloak.representations.idm.KeysMetadataRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,6 +44,9 @@ public class ApplicationConfiguration {
     @Value("${admin.password}")
     private String keycloackPassword;
 
+    @Autowired
+    private UserManagementService userManagementService;
+
 //    @Bean
 //    public Keycloak getUsers() {
 //        Keycloak keycloak = Keycloak.getInstance(keycloakServerUrl, keycloackRealm, keycloackUser, keycloackPassword,
@@ -49,7 +56,10 @@ public class ApplicationConfiguration {
 
     @PostConstruct
     public void init(){
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));   // It will set UTC timezone
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+
+        String token = userManagementService.authenticate(this.keycloackUser, this.keycloackPassword);
+        System.out.println("UserManagement > " + token);
     }
 
     @Bean

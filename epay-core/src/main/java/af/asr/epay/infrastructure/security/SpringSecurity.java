@@ -1,4 +1,4 @@
-package af.asr.epay.infrastructure;
+package af.asr.epay.infrastructure.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.keycloak.adapters.springsecurity.KeycloakConfiguration;

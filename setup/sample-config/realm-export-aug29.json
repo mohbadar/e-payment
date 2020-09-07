@@ -1,0 +1,5471 @@
+{
+  "id": "ebreshna",
+  "realm": "ebreshna",
+  "displayName": "eBreshna System",
+  "displayNameHtml": "eBreshna System",
+  "notBefore": 1593597720,
+  "revokeRefreshToken": false,
+  "refreshTokenMaxReuse": 0,
+  "accessTokenLifespan": 300,
+  "accessTokenLifespanForImplicitFlow": 900,
+  "ssoSessionIdleTimeout": 1800,
+  "ssoSessionMaxLifespan": 36000,
+  "ssoSessionIdleTimeoutRememberMe": 0,
+  "ssoSessionMaxLifespanRememberMe": 0,
+  "offlineSessionIdleTimeout": 2592000,
+  "offlineSessionMaxLifespanEnabled": false,
+  "offlineSessionMaxLifespan": 5184000,
+  "clientSessionIdleTimeout": 0,
+  "clientSessionMaxLifespan": 0,
+  "accessCodeLifespan": 60,
+  "accessCodeLifespanUserAction": 300,
+  "accessCodeLifespanLogin": 1800,
+  "actionTokenGeneratedByAdminLifespan": 43200,
+  "actionTokenGeneratedByUserLifespan": 300,
+  "enabled": true,
+  "sslRequired": "external",
+  "registrationAllowed": false,
+  "registrationEmailAsUsername": false,
+  "rememberMe": false,
+  "verifyEmail": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": false,
+  "editUsernameAllowed": false,
+  "bruteForceProtected": false,
+  "permanentLockout": false,
+  "maxFailureWaitSeconds": 900,
+  "minimumQuickLoginWaitSeconds": 60,
+  "waitIncrementSeconds": 60,
+  "quickLoginCheckMilliSeconds": 1000,
+  "maxDeltaTimeSeconds": 43200,
+  "failureFactor": 30,
+  "roles": {
+    "realm": [
+      {
+        "id": "5e87dd0f-85be-4b4c-b8dd-c914c779275f",
+        "name": "configuration_network_stationtype",
+        "description": "Configure Station Type",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7fbcd2ec-fa0d-47e5-84d4-c83bf87756a2",
+        "name": "configuration_network",
+        "description": "Configuration All Network Sub-module parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_network_stationtype",
+            "configuration_network_substation",
+            "configuration_network_meterboxmaster",
+            "configuration_network_areamaster",
+            "configuration_network_transformermaster",
+            "configuration_network_consumergroupdetails",
+            "configuration_network_feedermaster",
+            "configuration_network_ptrmaster",
+            "configuration_network_meterreadermaster"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "39fd815e-41c9-492e-bcc1-1e9351e9703f",
+        "name": "billing_billing_billprocess",
+        "description": "billing_billing_billprocess",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b715e121-a311-4579-b13d-255eba463c4b",
+        "name": "configuration_general_usermanagement",
+        "description": "configuration_general_usermanagement",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6c1f106f-7c1c-4f98-ab01-c8988a37db47",
+        "name": "metering_reports_junctionwisereports_groupwiseanomalyreport",
+        "description": "metering_reports_junctionwisereports_groupwiseanomalyreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7e4e0895-03bf-45c5-bb11-25c954f461d2",
+        "name": "metering_meterreading",
+        "description": "metering_meterreading",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_meterreading_meterroutingandscheduling",
+            "metering_meterreading_handhelddevice",
+            "metering_meterreading_meterreadingentity",
+            "metering_meterreading_meterreadingsheet"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "87c3857b-ad55-4857-a649-70eaaebcedbe",
+        "name": "serviceconnction_lpu_accountnumbergeneration",
+        "description": "serviceconnction_lpu_accountnumbergeneration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "217f35a3-19a9-4e74-9f98-adeab4777280",
+        "name": "metering_reports_reportslist_zonedatereport",
+        "description": "metering_reports_reportslist_zonedatereport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6b724a8d-aba7-4764-be43-f3e59da304e1",
+        "name": "billing_otheractivities_billstopedservicesapproval",
+        "description": "billing_otheractivities_billstopedservicesapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "a250e439-bd8f-4468-ac6c-68a34dd1c1dd",
+        "name": "metering_mobileapprovals_spotbillingstatusreport",
+        "description": "metering_mobileapprovals_spotbillingstatusreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f57a5ef9-7dc7-4cbc-b1b1-527fc81ae914",
+        "name": "metering_meterstock_meterstockdetails_meterapprovals",
+        "description": "metering_meterstock_meterstockdetails_meterapprovals",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2537f5c2-e849-4fb1-bdd9-565a803287c3",
+        "name": "helpdesk_complaintstobeclosed_inforequiredcomplaints",
+        "description": "helpdesk_complaintstobeclosed_inforequiredcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "18104329-60c8-42cf-b712-4f4c2421d8bd",
+        "name": "customerservice_customerservice_customerchanges_phasecorrectionapprovals",
+        "description": "customerservice_customerservice_customerchanges_phasecorrectionapprovals",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "edea09e0-af00-4273-87bd-34172c5f0019",
+        "name": "configuration_general",
+        "description": "configuration_general",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_general_esignature",
+            "configuration_general_province",
+            "configuration_general_usermanagement"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "fed51172-7f65-4b84-a993-e1490d31cbd2",
+        "name": "metering_reports_junctionwisereports_consumerwiseanomalyapprovalreport",
+        "description": "metering_reports_junctionwisereports_consumerwiseanomalyapprovalreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bbfba615-99a6-4009-bc8e-c298737c4140",
+        "name": "billing_billing_bill_finalbillrequest",
+        "description": "billing_billing_bill_finalbillrequest",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2283052e-44a8-49fc-98aa-de9eb206d202",
+        "name": "serviceconnction_online_siteinspection",
+        "description": "serviceconnction_online_siteinspection",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b46f6c44-ed46-4a07-889c-4e4ed5a65942",
+        "name": "billing_billing_billpreview",
+        "description": "billing_billing_billpreview",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_billing_billpreview_duplicatebillprint",
+            "billing_billing_billpreview_duplicatefinalbillprint",
+            "billing_billing_billpreview_groupbillprint",
+            "billing_billing_billpreview_singlebillprint"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2371c108-2c35-47eb-9a31-19b3ad9ac1c5",
+        "name": "metering_reports",
+        "description": "metering_reports",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_reports_junctionwisereports",
+            "metering_reports_reportslist"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "45c77523-ed86-4cb6-856e-13b3e7abcab4",
+        "name": "serviceconnction_online_siteinspectionrejection",
+        "description": "serviceconnction_online_siteinspectionrejection",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9267486f-be34-4400-bfc1-36fcab302a2a",
+        "name": "payments_reports",
+        "description": "payments_reports",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "52984340-2a3c-4a2a-bac0-451e78f8191e",
+        "name": "configuration_payment_counteractivation",
+        "description": "configuration_payment_counteractivation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cbad8e21-cb4c-4dab-9260-ff592ebe0e44",
+        "name": "customerservice_aknowledgments_checkmastercomplaintstatus",
+        "description": "customerservice_aknowledgments_checkmastercomplaintstatus",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "57c269b8-6f5f-41c2-9320-cf87c193b60e",
+        "name": "metering_mobileapprovals_rejectedreadings",
+        "description": "metering_mobileapprovals_rejectedreadings",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5d1b789f-53a3-4808-ac37-ce52485debd4",
+        "name": "metering_mobileapprovals_casebookfortransformer",
+        "description": "metering_mobileapprovals_casebookfortransformer",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "abdf03fb-7e35-4006-8cdd-cdb197bc49c1",
+        "name": "serviceconnction_lpu",
+        "description": "serviceconnction_lpu",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "serviceconnction_lpu_serviceregistration",
+            "serviceconnction_lpu_commitmentletterupload",
+            "serviceconnction_lpu_msmreview",
+            "serviceconnction_lpu_pedmanager",
+            "serviceconnction_lpu_assignrelaydepartmentmemberbyrm",
+            "serviceconnction_lpu_junctionstationassigningmember",
+            "serviceconnction_lpu_timeallocation",
+            "serviceconnction_lpu_meterfactordetermreportbyrdm",
+            "serviceconnction_lpu_transformermaintenancedpe",
+            "serviceconnction_lpu_firstsiteinspectionreportapprovalod",
+            "serviceconnction_lpu_estimation",
+            "serviceconnction_lpu_electrotechnicdepartment",
+            "serviceconnction_lpu_msmreviewapproval",
+            "serviceconnction_lpu_firstsiteinspectionreportapprovalmd",
+            "serviceconnction_lpu_firstsiteinspectionreportapprovaldpo",
+            "serviceconnction_lpu_meterlabofficereview",
+            "serviceconnction_lpu_firstconsumerintimation",
+            "serviceconnction_lpu_cooreview",
+            "serviceconnction_lpu_networkexpansionmanagerreview",
+            "serviceconnction_lpu_relayreportapprovalbyrm",
+            "serviceconnction_lpu_nmapprovaltocheckdtr",
+            "serviceconnction_lpu_serialsrecheck",
+            "serviceconnction_lpu_assignsiteinspectionmemberbyecd",
+            "serviceconnction_lpu_secondconsumerintimation",
+            "serviceconnction_lpu_accountnumbergeneration",
+            "serviceconnction_lpu_servicerelease",
+            "serviceconnction_lpu_assigningsiteinspector",
+            "serviceconnction_lpu_firstsiteinspectionreportapprovalcoo",
+            "serviceconnction_lpu_secondsiteinspectionpedinspector",
+            "serviceconnction_lpu_technicalinspectionapprovalbyped",
+            "serviceconnction_lpu_compensationchargesestimation",
+            "serviceconnction_lpu_dpreview",
+            "serviceconnction_lpu_transformerconnection"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4eb1dfc3-30b6-468f-a7c6-70ecdc8ffaf1",
+        "name": "payments_installmentpayments_reconnectioninstallmentconfiguration",
+        "description": "payments_installmentpayments_reconnectioninstallmentconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "dcc4b0ee-68ed-42c3-8b4a-1da9eee30a76",
+        "name": "serviceconnction_lpu_transformermaintenancedpe",
+        "description": "serviceconnction_lpu_transformermaintenancedpe",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f53525ef-6353-43e4-99fc-51566046ef40",
+        "name": "billing_billing_billpreview_singlebillprint",
+        "description": "billing_billing_billpreview_singlebillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8f3f9f42-532e-42d5-b669-04cb3c0cb8e5",
+        "name": "billing_billing_smsbilling_singlemobilenobinding",
+        "description": "billing_billing_smsbilling_singlemobilenobinding",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ae6c4bf1-6a5b-4d33-b2e4-519a6d5ed438",
+        "name": "serviceconnction_online_wocompletion",
+        "description": "serviceconnction_online_wocompletion",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1ed50274-0892-4d82-9e8d-feaddd5b040f",
+        "name": "metering_mobileapprovals_meterreaderapproval",
+        "description": "metering_mobileapprovals_meterreaderapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "34449beb-6a2c-41d3-9210-4ed3900af4e0",
+        "name": "payments_installmentpayments_installmentconfiguration",
+        "description": "payments_installmentpayments_installmentconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ac468e19-5994-4b38-93b2-401082a21a2e",
+        "name": "serviceconnction_online_gridextensionbill",
+        "description": "serviceconnction_online_gridextensionbill",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "540c0486-56a7-4538-9c24-eed735e6388e",
+        "name": "serviceconnction_online_permanentlyrejected",
+        "description": "serviceconnction_online_permanentlyrejected",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b6acebce-3ac1-41db-b749-8d4b07804fc8",
+        "name": "serviceconnction_lpu_secondsiteinspectionpedinspector",
+        "description": "serviceconnction_lpu_secondsiteinspectionpedinspector",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8eafe6b3-83fa-4c06-b9c9-96f1b464e329",
+        "name": "metering_otheractivities_joborder",
+        "description": "metering_otheractivities_joborder",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3e63081d-177f-4d34-8252-969dba66c6b0",
+        "name": "billing_quicklinks",
+        "description": "billing_quicklinks",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_quicklinks_customermobilenumberupdate",
+            "billing_quicklinks_duplicatebillprint",
+            "billing_quicklinks_duplicatefinalbillprint",
+            "billing_quicklinks_customersearch"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8ec7aa98-c9d9-474a-8e6b-c163259e61af",
+        "name": "configuration_payment_bankbranch",
+        "description": "configuration_payment_bankbranch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d269687f-8770-4f54-a015-8621a868d03c",
+        "name": "payments_advancedpayments_caapproval",
+        "description": "payments_advancedpayments_caapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ffd780b3-b3ed-408f-802a-abf0b8a2f7ff",
+        "name": "customerservice_customerservice_meterrelatedcomplaints_joborderlist",
+        "description": "customerservice_customerservice_meterrelatedcomplaints_joborderlist",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4e7ba370-2838-4309-a6d2-54b1d0663e20",
+        "name": "customerservice_escalations_beyondescalation",
+        "description": "customerservice_escalations_beyondescalation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8fa2c509-ce69-4818-a806-5054fccb55dc",
+        "name": "serviceconnction_online_approvestransformerupdation",
+        "description": "serviceconnction_online_approvestransformerupdation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9352bb5e-9a26-4a7c-98ea-bb3c33df7632",
+        "name": "metering_meterstock",
+        "description": "metering_meterstock",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_meterstock_meterstockdetails"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "424e5847-a890-41e0-8589-dfc21714f5d8",
+        "name": "serviceconnction_lpu_networkexpansionmanagerreview",
+        "description": "serviceconnction_lpu_networkexpansionmanagerreview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b918b6e0-c669-4536-ba50-f95a9668bea8",
+        "name": "metering_mobileapprovals_casebookfornonlpu",
+        "description": "metering_mobileapprovals_casebookfornonlpu",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bf9f87d7-dfaf-4611-acf1-0feed9886665",
+        "name": "payments_installmentpayments_installmentblacklist",
+        "description": "payments_installmentpayments_installmentblacklist",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4ccf26f7-449a-4640-a916-57ee7cbe99a8",
+        "name": "helpdesk_complaintstobeclosed_duplicatecomplaints",
+        "description": "helpdesk_complaintstobeclosed_duplicatecomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d830bd59-5a0b-475f-9e6a-3cb28e0acf0c",
+        "name": "customerservice_customerservice_customerchanges_addresscorrectioncomplaints",
+        "description": "customerservice_customerservice_customerchanges_addresscorrectioncomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4ad07023-2567-4512-ac9a-99cee1ae8ba5",
+        "name": "serviceconnction_online_rejectedservices",
+        "description": "serviceconnction_online_rejectedservices",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4382d340-bac3-48ae-8d69-36cd5dec7f5b",
+        "name": "metering_otheractivities",
+        "description": "metering_otheractivities",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_otheractivities_meterrelatedcomplaints",
+            "metering_otheractivities_jsmserviceordertransfer",
+            "metering_otheractivities_joborder",
+            "metering_otheractivities_serviceordertransfer",
+            "metering_otheractivities_finalbillrequest"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b5f68b63-e1dd-4b66-b04f-2da6ac3fbd16",
+        "name": "configuration_nsc_unitmaster",
+        "description": "configuration_nsc_unitmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "acc896ce-a5d9-450d-9d27-72b84c5ef224",
+        "name": "configuration_metering_metertype",
+        "description": "configuration_metering_metertype",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5be19b79-faeb-4cf1-89b1-ec31bc9426a7",
+        "name": "customerservice_customerservice_customerchanges_titletransfercomplaints",
+        "description": "customerservice_customerservice_customerchanges_titletransfercomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "473c047f-f4a3-493e-8f7c-fb1cfcb9cf78",
+        "name": "payments_installmentpayments_duplicateinstallmentacknowledgment",
+        "description": "payments_installmentpayments_duplicateinstallmentacknowledgment",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "df90b0dd-3e69-4d0c-90af-b4e3055358dc",
+        "name": "serviceconnction_lpu_firstsiteinspectionreportapprovaldpo",
+        "description": "serviceconnction_lpu_firstsiteinspectionreportapprovaldpo",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8a36595a-e9b8-4a60-b103-9cdd6649ace9",
+        "name": "configuration_payment_extendedmaxamount",
+        "description": "configuration_payment_extendedmaxamount",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9366a4cc-944a-416e-b49a-d73ee5d5f7f1",
+        "name": "serviceconnction_lpu_msmreview",
+        "description": "serviceconnction_lpu_msmreview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6d40d3c7-007e-4e5e-8c51-caa7a634bc91",
+        "name": "serviceconnction_lpu_transformerconnection",
+        "description": "serviceconnction_lpu_transformerconnection",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "045dde50-e2c7-4500-a71c-9490116bfbd4",
+        "name": "helpdesk_complaintstobeclosed",
+        "description": "helpdesk_complaintstobeclosed",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "helpdesk_complaintstobeclosed_rectifiedcomplaints",
+            "helpdesk_complaintstobeclosed_duplicatecomplaints",
+            "helpdesk_complaintstobeclosed_inforequiredcomplaints",
+            "helpdesk_complaintstobeclosed_invalidcomplaints"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3003d1e6-70a1-465f-ae5b-d3d73d36ff0d",
+        "name": "user",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "49874fa2-7d3f-48d1-8d1e-6ed6a7206bbb",
+        "name": "configuration_billing_customergroupmaster",
+        "description": "configuration_billing_customergroupmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4cdd3c15-44dd-4c7c-b63a-74c2021784d0",
+        "name": "configuration_billing_tariffparameters",
+        "description": "configuration_billing_tariffparameters",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "70e2d6db-d0b6-4292-bd1a-5485afe15deb",
+        "name": "customerservice_customerservice_customerchanges_areachanges",
+        "description": "customerservice_customerservice_customerchanges_areachanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "a2e46dfd-b1a1-46c9-9217-7a07ed87ac2a",
+        "name": "customerservice_querymodification",
+        "description": "customerservice_querymodification",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_querymodification_debitjournalentity",
+            "customerservice_querymodification_rjapproval",
+            "customerservice_querymodification_miscellaeousinvoicegeneration",
+            "customerservice_querymodification_creditjournalentity"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "177f235b-38d4-48c1-ab74-4cc9c35de6ec",
+        "name": "serviceconnction_lpu_firstsiteinspectionreportapprovalcoo",
+        "description": "serviceconnction_lpu_firstsiteinspectionreportapprovalcoo",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7557f12c-bef2-4857-a91c-00ff69568545",
+        "name": "configuration_csc_requesttype",
+        "description": "configuration_csc_requesttype",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7674bd6f-6eaa-4d03-998a-b0f558c873a6",
+        "name": "configuration_billing_processbehaviourlink",
+        "description": "configuration_billing_processbehaviourlink",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c1f29fb5-64bb-449e-a16d-85ed2a0f4d16",
+        "name": "metering_mobileapprovals_readingsapproval",
+        "description": "metering_mobileapprovals_readingsapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2ecff02c-ea5f-48ad-b418-8eee10263eee",
+        "name": "customerservice_customerservice_queryservice_pendingreg",
+        "description": "customerservice_customerservice_queryservice_pendingreg",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "65a8a44f-b0fa-4047-a2d6-baf147b4618f",
+        "name": "customerservice_reports_namechangereport",
+        "description": "customerservice_reports_namechangereport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0b82fd00-a9d1-4532-a0a5-ec10a1d3a1da",
+        "name": "configuration_metering_zoneconfiguration",
+        "description": "configuration_metering_zoneconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f72f3855-7b5b-4ad0-9abe-001eb37ce0d3",
+        "name": "customerservice_ecallregistration_feedbackofcomplaint",
+        "description": "customerservice_ecallregistration_feedbackofcomplaint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6dd39af6-86e9-47dd-9879-329f9856203b",
+        "name": "customerservice_customerservice_customerchanges_closebillrequests",
+        "description": "customerservice_customerservice_customerchanges_closebillrequests",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cd278cde-2cdb-43b7-b833-e4a0737833dd",
+        "name": "serviceconnction_lpu_meterfactordetermreportbyrdm",
+        "description": "serviceconnction_lpu_meterfactordetermreportbyrdm",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f155ce4b-29bc-4e66-81eb-d2c586675ba6",
+        "name": "metering_meterstock_meterstockdetails",
+        "description": "metering_meterstock_meterstockdetails",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_meterstock_meterstockdetails_meterbulkupload",
+            "metering_meterstock_meterstockdetails_meterapprovals"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "18a67aa4-20c0-49b0-8c13-82bf8d2b5cf9",
+        "name": "customerservice_customerservice_meterrelatedcomplaints_calibrationreport",
+        "description": "customerservice_customerservice_meterrelatedcomplaints_calibrationreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ae8c3246-964f-43a7-9858-c4a5f14278ef",
+        "name": "billing_quicklinks_duplicatefinalbillprint",
+        "description": "billing_quicklinks_duplicatefinalbillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b780a653-8ebf-4fe1-b684-81b4b703ae3c",
+        "name": "serviceconnction_online_newmeterboxinstallation",
+        "description": "serviceconnction_online_newmeterboxinstallation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "35918e5e-b6fa-44ef-a292-0b72a4424533",
+        "name": "payments_grouppayments",
+        "description": "payments_grouppayments",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "payments_grouppayments_billreceiptcancellation",
+            "payments_grouppayments_miscellaneousandenergycharges"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5b473baf-ba46-438e-bdd2-53018543cb76",
+        "name": "serviceconnction_online_commissionofinstallation",
+        "description": "serviceconnction_online_commissionofinstallation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b1f521f4-cbe5-4d03-9b00-a0ea491eb217",
+        "name": "serviceconnction_lpu_estimation",
+        "description": "serviceconnction_lpu_estimation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0f0031bd-5709-47e0-84ad-ed4a48e2087f",
+        "name": "payments_advancedpayments",
+        "description": "payments_advancedpayments",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "payments_advancedpayments_billingdepartmentapproval",
+            "payments_advancedpayments_requestapproval",
+            "payments_advancedpayments_advancedpaymentrequest",
+            "payments_advancedpayments_caapproval"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "81535583-8890-4a32-b8c5-7cf7b9cf7c52",
+        "name": "customerservice_customerservice_customerchanges_namecorrectioncomplaints",
+        "description": "customerservice_customerservice_customerchanges_namecorrectioncomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "808ad2db-46aa-4f23-b4a4-4c63076e7ce9",
+        "name": "metering_mobileapprovals_readerdeactivation",
+        "description": "metering_mobileapprovals_readerdeactivation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "32ac7c75-cdbe-481f-9137-e3beee7022a7",
+        "name": "configuration_nsc_documentmaster",
+        "description": "configuration_nsc_documentmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "99db1e79-343f-4e54-a9c1-b737d3c030eb",
+        "name": "metering_otheractivities_serviceordertransfer",
+        "description": "metering_otheractivities_serviceordertransfer",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "73216fa3-4de0-4d2d-9ad9-de5fa5a712b4",
+        "name": "payments_advancedpayments_advancedpaymentrequest",
+        "description": "payments_advancedpayments_advancedpaymentrequest",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "352749a2-944a-4f6d-8f38-9a690862faf3",
+        "name": "metering_reports_reportslist_meterdetailsreport",
+        "description": "metering_reports_reportslist_meterdetailsreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2f905caf-29b4-434d-8116-2024f15590ce",
+        "name": "customerservice_customerservice_queryservice_rejectedcomplaints",
+        "description": "customerservice_customerservice_queryservice_rejectedcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "28d4f8da-0c92-4722-bdb8-c6b17fe90d27",
+        "name": "configuration_office_officetype",
+        "description": "configuration_office_officetype",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b3f6a202-92aa-4ee7-8cb6-49cd7f159185",
+        "name": "configuration_nsc_categorydocumentmaster",
+        "description": "configuration_nsc_categorydocumentmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f309ffbc-f7f1-40a4-9e5d-38efa6c69ec1",
+        "name": "serviceconnction_lpu_dpreview",
+        "description": "serviceconnction_lpu_dpreview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2043312b-c571-4671-8daa-18762865ca54",
+        "name": "serviceconnction_online_accountnumbergeneration",
+        "description": "serviceconnction_online_accountnumbergeneration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f26c2b9d-e815-4a9b-ba58-1ee33079bbb1",
+        "name": "customerservice_querymodification_creditjournalentity",
+        "description": "customerservice_querymodification_creditjournalentity",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ec01a636-2300-4fcc-b638-5d719184e50e",
+        "name": "configuration_metering_zoneofficerelationconfiguration",
+        "description": "configuration_metering_zoneofficerelationconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "292b5450-1bba-426e-867f-4a56460e91e8",
+        "name": "configuration_network_substation",
+        "description": "configuration_network_stationtype",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "69238439-41a0-48d4-8a49-fefa7310427e",
+        "name": "customerservice_customerservice",
+        "description": "customerservice_customerservice",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_queryservice",
+            "customerservice_customerservice_requestcomplaint",
+            "customerservice_customerservice_supplyrelatedcomplaints",
+            "customerservice_customerservice_customerchanges",
+            "customerservice_customerservice_billingrelatedcomplaints",
+            "customerservice_customerservice_meterrelatedcomplaints"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9b64c9b3-246f-4f1e-8ff9-079c0340a23e",
+        "name": "billing_billing_smsbilling_sendsms",
+        "description": "billing_billing_smsbilling_sendsms",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ce805722-b494-4980-8999-98217fb68eb1",
+        "name": "customerservice_customerservice_queryservice_complaintsundersiteinspection",
+        "description": "customerservice_customerservice_queryservice_complaintsundersiteinspection",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0f4b952e-ba00-4084-8bf2-1bcffa699a06",
+        "name": "serviceconnction_lpu_assigningsiteinspector",
+        "description": "serviceconnction_lpu_assigningsiteinspector",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "26e61f42-98bb-45bd-aa4f-0ccf1ad2fe9b",
+        "name": "customerservice_customerservice_requestcomplaint",
+        "description": "customerservice_customerservice_requestcomplaint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e4ca891f-405f-40e3-973a-e22e36e1aa57",
+        "name": "helpdesk_registration_registration",
+        "description": "helpdesk_registration_registration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0aded177-bba7-4aec-9bb1-9519ef61aae7",
+        "name": "customerservice_customerservice_queryservice",
+        "description": "customerservice_customerservice_queryservice",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_queryservice_dispatchlist",
+            "customerservice_customerservice_queryservice_closedfinalbillrequest",
+            "customerservice_customerservice_queryservice_rejectedcomplaints",
+            "customerservice_customerservice_queryservice_complaintsundersiteinspection",
+            "customerservice_customerservice_queryservice_ractifiedqueries",
+            "customerservice_customerservice_queryservice_pendingreg",
+            "customerservice_customerservice_queryservice_reopenedcomplaints"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "dede08f2-b456-4b20-a0bd-b51833965af0",
+        "name": "serviceconnction_lpu_msmreviewapproval",
+        "description": "serviceconnction_lpu_msmreviewapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "edd3870a-b5f4-4023-8e42-42e422166816",
+        "name": "customerservice_reports_rjwrongpostingreport",
+        "description": "customerservice_reports_rjwrongpostingreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "db08fe64-095d-4374-af75-33bbdbdef264",
+        "name": "metering_meterreading_meterroutingandscheduling",
+        "description": "metering_meterreading_meterroutingandscheduling",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cb5a77a4-ae54-42dc-b673-51a7b6f238ea",
+        "name": "configuration_metering_activitymaster",
+        "description": "configuration_metering_activitymaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b8fcc349-8adf-4659-99d0-99e6881dd65a",
+        "name": "serviceconnction_lpu_commitmentletterupload",
+        "description": "serviceconnction_lpu_commitmentletterupload",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "17b6c913-0d1f-4174-be81-a658827bf168",
+        "name": "configuration_billing_tariffcharges",
+        "description": "configuration_billing_tariffcharges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "671421a0-87f6-4e1f-85aa-224cd55a9b1c",
+        "name": "configuration_payment_postingdaysconfiguration",
+        "description": "configuration_payment_postingdaysconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6c40d71a-fb23-41a4-b432-d9478005b2e8",
+        "name": "customerservice_customerservice_queryservice_ractifiedqueries",
+        "description": "customerservice_customerservice_queryservice_ractifiedqueries",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "eda78cd5-dfc1-4fdc-982c-135b1132f54b",
+        "name": "configuration_billing_behaviourconfiguration",
+        "description": "configuration_billing_behaviourconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "08d65701-e59d-481d-873c-7d1f1aaef638",
+        "name": "configuration_metering_metermakedetails",
+        "description": "configuration_metering_metermakedetails",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e615e80a-f357-4580-8178-84db7963b49f",
+        "name": "customerservice_reports_rectifiedcomplaintreport",
+        "description": "customerservice_reports_rectifiedcomplaintreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "47128e68-0158-4e49-a015-55f2e0e88aae",
+        "name": "configuration_billing_categorymaster",
+        "description": "configuration_billing_categorymaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "72b5b517-50e4-4391-8b7a-ab5a6cd10ff2",
+        "name": "manage-users",
+        "composite": true,
+        "composites": {
+          "client": {
+            "realm-management": [
+              "query-groups",
+              "query-realms",
+              "manage-realm",
+              "view-realm",
+              "view-events",
+              "view-users",
+              "view-authorization",
+              "manage-clients",
+              "manage-users",
+              "query-users",
+              "realm-admin",
+              "manage-events",
+              "impersonation",
+              "view-identity-providers",
+              "view-clients",
+              "manage-identity-providers",
+              "query-clients",
+              "manage-authorization",
+              "create-client"
+            ]
+          }
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ef19a153-3be0-47e9-95eb-7dd2ce5580e5",
+        "name": "billing_billing_smsbilling",
+        "description": "billing_billing_smsbilling",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_billing_smsbilling_singlemobilenobinding",
+            "billing_billing_smsbilling_bulkmobilenoupload",
+            "billing_billing_smsbilling_senddeliveryreport",
+            "billing_billing_smsbilling_sendsms"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "73b006c9-877e-4048-9f11-b7bc1d6614b1",
+        "name": "configuration_payment_lpufeeconfiguration",
+        "description": "configuration_payment_lpufeeconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "15b8e77d-3b57-460b-8ba2-63c52e813d40",
+        "name": "payments_installmentpayments_installmentconfigurationapproval",
+        "description": "payments_installmentpayments_installmentconfigurationapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1a7731fc-3d5d-41db-af15-6cf95478c35f",
+        "name": "serviceconnction_lpu_meterlabofficereview",
+        "description": "serviceconnction_lpu_meterlabofficereview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0c7c85d3-c670-41cc-8931-3494b08bf2dc",
+        "name": "customerservice_customerservice_supplyrelatedcomplaints_supplyrelatedcomplaints",
+        "description": "customerservice_customerservice_supplyrelatedcomplaints_supplyrelatedcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f364772a-3132-4f76-8361-cf86ae78ef1c",
+        "name": "customerservice_customerservice_billingrelatedcomplaints_complaintsunderbillrevision",
+        "description": "customerservice_customerservice_billingrelatedcomplaints_complaintsunderbillrevision",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e5c60906-5e57-4597-8755-8588d257b5a6",
+        "name": "metering_reports_reportslist_transformersundermeterreader",
+        "description": "metering_reports_reportslist_transformersundermeterreader",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "40987bb6-c425-4cd8-b7fa-e1a26a4b50e7",
+        "name": "configuration_network_meterreadermaster",
+        "description": "configuration_network_meterreadermaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "eec3201a-dffc-413d-aea9-0b8242d42558",
+        "name": "payments_grouppayments_miscellaneousandenergycharges",
+        "description": "payments_grouppayments_miscellaneousandenergycharges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f6ae9076-9718-4a43-b747-91edc081a32a",
+        "name": "customerservice_customerservice_customerchanges_tariffcorrectionapproval",
+        "description": "customerservice_customerservice_customerchanges_tariffcorrectionapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "210179e5-c19b-4f6d-a060-927f3700d3e2",
+        "name": "uma_authorization",
+        "description": "${role_uma_authorization}",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5dd43441-b7ac-4564-a749-bd6017bd273c",
+        "name": "customerservice_escalations_exp",
+        "description": "customerservice_escalations_exp",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "99ef4f1a-5157-415d-ad42-b27db510eaf5",
+        "name": "payments_advancedpayments_requestapproval",
+        "description": "payments_advancedpayments_requestapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b5525770-01d8-4527-8c84-7897433e6534",
+        "name": "metering_reports_junctionwisereports_junctionwiseanomalyreport",
+        "description": "metering_reports_junctionwisereports_junctionwiseanomalyreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "32cff05d-a96c-4522-92e2-43ac6ae28df1",
+        "name": "helpdesk_complaintstobeclosed_invalidcomplaints",
+        "description": "helpdesk_complaintstobeclosed_invalidcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f999964b-1260-4cb6-b74c-0f6ec879b7e4",
+        "name": "configuration_metering_metermakeserials",
+        "description": "configuration_metering_metermakeserials",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "18d121b7-4760-49c9-9b5e-1ee78c37fa71",
+        "name": "serviceconnction_online_estimateapproval",
+        "description": "serviceconnction_online_estimateapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "a1cefdb4-7a45-417a-ac52-190452e464ee",
+        "name": "serviceconnction_lpu_serviceregistration",
+        "description": "serviceconnction_lpu_serviceregistration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5b9fbf57-350d-4eb3-bf29-34ebacfe561b",
+        "name": "serviceconnction_lpu_firstconsumerintimation",
+        "description": "serviceconnction_lpu_firstconsumerintimation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "69dff445-bb74-4f77-8246-d6392bbafcb7",
+        "name": "billing_quicklinks_duplicatebillprint",
+        "description": "billing_quicklinks_duplicatebillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e5c4d730-213d-4c45-a721-cb26814ad299",
+        "name": "billing_otheractivities_caad",
+        "description": "billing_otheractivities_caad",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "34dc4694-15b6-4f7a-9705-5862184b1769",
+        "name": "configuration_general_esignature",
+        "description": "configuration_general_esignature",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "64590f71-db09-42ca-a3c9-f8f04a7f4b27",
+        "name": "billing_billing_billpreview_duplicatebillprint",
+        "description": "billing_billing_billpreview_duplicatebillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "70e50eca-b646-44e2-bd7c-340c37f40a1d",
+        "name": "metering_reports_junctionwisereports_anomaliesreportbycycleandyear",
+        "description": "metering_reports_junctionwisereports_anomaliesreportbycycleandyear",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b4179725-c283-4d25-9133-a6aba3b6aa7a",
+        "name": "metering_otheractivities_finalbillrequest",
+        "description": "metering_otheractivities_finalbillrequest",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8c57daf8-e68d-4496-bb54-a696c3312cbe",
+        "name": "payments_advancedpayments_billingdepartmentapproval",
+        "description": "payments_advancedpayments_billingdepartmentapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1ee2ea9b-184d-42ee-bf05-0dd495c1468b",
+        "name": "customerservice_customerservice_customerchanges_finalbillcomplaints",
+        "description": "customerservice_customerservice_customerchanges_finalbillcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6fb48a4b-c697-452e-8057-89991d57b247",
+        "name": "payments_searchpayments",
+        "description": "payments_searchpayments",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1ac89b6a-b681-40fb-aa7e-dfe0196254ba",
+        "name": "payments_paymentposting",
+        "description": "payments_paymentposting",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "79f00f4c-2dcf-4e74-b056-f9755cdc7683",
+        "name": "metering_mobileapprovals_rpsanomalies",
+        "description": "metering_mobileapprovals_rpsanomalies",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "47b89a6b-0c0f-405d-9075-755b648c7d89",
+        "name": "serviceconnction_lpu_serialsrecheck",
+        "description": "serviceconnction_lpu_serialsrecheck",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ec22150b-6add-472a-a609-76af8fb06150",
+        "name": "configuration_billing_trlossesconfiguration",
+        "description": "configuration_billing_trlossesconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d15a05c0-5311-4ead-ba8c-a057280681bc",
+        "name": "customerservice_aknowledgments_registration",
+        "description": "customerservice_aknowledgments_registration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b03367aa-454f-4d60-82b2-10c0d70ca869",
+        "name": "customerservice_querymodification_miscellaeousinvoicegeneration",
+        "description": "customerservice_querymodification_miscellaeousinvoicegeneration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b3dd3e28-ffda-4345-9278-a4415254736d",
+        "name": "customerservice_reports_rjwrongpostpendingreport",
+        "description": "customerservice_reports_rjwrongpostpendingreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "50ffd6d5-0b0c-4d4a-822f-76ad2c802b67",
+        "name": "customerservice_customerservice_customerchanges",
+        "description": "customerservice_customerservice_customerchanges",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_customerchanges_titletransferchanges",
+            "customerservice_customerservice_customerchanges_tariffcorrectionapproval",
+            "customerservice_customerservice_customerchanges_finalbillcomplaints",
+            "customerservice_customerservice_customerchanges_closebillrequests",
+            "customerservice_customerservice_customerchanges_areacorrectionrequests",
+            "customerservice_customerservice_customerchanges_phasecorrectionapprovals",
+            "customerservice_customerservice_customerchanges_addresscorrection",
+            "customerservice_customerservice_customerchanges_namecorrectionrequests",
+            "customerservice_customerservice_customerchanges_areachanges",
+            "customerservice_customerservice_customerchanges_namecorrectioncomplaints",
+            "customerservice_customerservice_customerchanges_areacorrectioncomplaints",
+            "customerservice_customerservice_customerchanges_areachangescomplaints",
+            "customerservice_customerservice_customerchanges_tariffchanges",
+            "customerservice_customerservice_customerchanges_titletransfercomplaints",
+            "customerservice_customerservice_customerchanges_addresscorrectioncomplaints"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "aefd82ee-c01f-455f-ab7d-7cd06d370450",
+        "name": "configuration_billing",
+        "description": "configure all billing parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_billing_tariffparameters",
+            "configuration_billing_processbehaviourlink",
+            "configuration_billing_categorymaster",
+            "configuration_billing_categorytypemaster",
+            "configuration_billing_billduedatedays",
+            "configuration_billing_tariffcharges",
+            "configuration_billing_processconfiguration",
+            "configuration_billing_trlossesconfiguration",
+            "configuration_billing_behaviourconfiguration",
+            "configuration_billing_customergroupmaster",
+            "configuration_billing_voltagegroupmaster"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6ed80616-e34c-43a4-9673-49d993efe77c",
+        "name": "configuration_payment_bankuserrelation",
+        "description": "configuration_payment_bankuserrelation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "db51b50b-5cf0-4c6d-9263-e5d972f7b468",
+        "name": "configuration_office",
+        "description": "Configure all office sub-module",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_office_officemaster",
+            "configuration_office_designationmaster",
+            "configuration_office_govtcodemaster",
+            "configuration_office_fieldstaffemployee",
+            "configuration_office_natureofpremises",
+            "configuration_office_officetype"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9889d41b-50c4-4562-8395-e33c1b93bdfc",
+        "name": "metering_reports_junctionwisereports",
+        "description": "metering_reports_junctionwisereports",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_reports_junctionwisereports_consumptionreport",
+            "metering_reports_junctionwisereports_junctionwiseanomalyreport",
+            "metering_reports_junctionwisereports_readingsunenteredreportbycycleandyear",
+            "metering_reports_junctionwisereports_groupwiseanomalyreport",
+            "metering_reports_junctionwisereports_nilconsumptionreportbycycleandyear",
+            "metering_reports_junctionwisereports_consumerwisereadingentryreport",
+            "metering_reports_junctionwisereports_consumerwiseanomalyapprovalreport",
+            "metering_reports_junctionwisereports_anomaliesreportbycycleandyear"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e51c2454-f8c2-43a9-8608-2f860627fbfb",
+        "name": "billing_otheractivities_crmd",
+        "description": "billing_otheractivities_crmd",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bfce37b2-b317-48b0-965c-410c4c05a8b9",
+        "name": "billing_otheractivities_primaryupdate",
+        "description": "billing_otheractivities_primaryupdate",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "43432d14-0b2e-4ea7-9274-62aa1467949d",
+        "name": "metering_meterreading_handhelddevice",
+        "description": "metering_meterreading_handhelddevice",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "063f8e41-64fd-4378-bed9-1f50fc7fc9ff",
+        "name": "configuration_network_transformermaster",
+        "description": "configuration_network_transformermaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bfc0a3ca-797d-459a-8a57-400ccce3bb80",
+        "name": "metering_mobileapprovals",
+        "description": "metering_mobileapprovals",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_mobileapprovals_spotbillingstatusreport",
+            "metering_mobileapprovals_readingsapproval",
+            "metering_mobileapprovals_readerdeactivation",
+            "metering_mobileapprovals_casebookfortransformer",
+            "metering_mobileapprovals_rpsanomalies",
+            "metering_mobileapprovals_casebookforlpu",
+            "metering_mobileapprovals_rejectedreadings",
+            "metering_mobileapprovals_casebookfornonlpu",
+            "metering_mobileapprovals_meterreaderapproval",
+            "metering_mobileapprovals_mssapproval"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "edb5612e-6603-443c-87b2-d5032c881fe8",
+        "name": "serviceconnction_online_estimate",
+        "description": "serviceconnction_online_estimate",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e91b5b39-9ad1-401d-bbbe-9dc7eda9aff1",
+        "name": "metering_otheractivities_jsmserviceordertransfer",
+        "description": "metering_otheractivities_jsmserviceordertransfer",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "da937ddd-aea5-42a8-adb7-d8dcc270d806",
+        "name": "customerservice_aknowledgments",
+        "description": "customerservice_aknowledgments",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_aknowledgments_complaintstatus",
+            "customerservice_aknowledgments_dispatch",
+            "customerservice_aknowledgments_checkmastercomplaintstatus",
+            "customerservice_aknowledgments_registration"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d8311a10-04c6-47dc-884c-7983c2683e7d",
+        "name": "metering_quicklinks_meterstatus",
+        "description": "metering_quicklinks_meterstatus",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3e2adbb0-4829-4bc1-b4e2-a80bcc23aec3",
+        "name": "customerservice_customerservice_queryservice_reopenedcomplaints",
+        "description": "customerservice_customerservice_queryservice_reopenedcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "92ab0f6c-6682-43b5-9d91-f6a600615f33",
+        "name": "configuration_office_govtcodemaster",
+        "description": "configuration_office_govtcodemaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c8e45288-dae3-4a33-8151-9bc09947dbc1",
+        "name": "configuration_payment_bankmaster",
+        "description": "configuration_payment_bankmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8df02807-1dd1-4709-bfcd-10055913e8a8",
+        "name": "configuration_csc_statusconfiguration",
+        "description": "configuration_csc_statusconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5748badd-445b-4c06-8f09-7ef990ce96b6",
+        "name": "metering_quicklinks_customersearch",
+        "description": "metering_quicklinks_customersearch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e29682fa-0fb9-45d0-a781-0c91418982d5",
+        "name": "customerservice_customerservice_customerchanges_addresscorrection",
+        "description": "customerservice_customerservice_customerchanges_addresscorrection",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "88638d8e-6cf0-438a-bc9f-1c18906256f9",
+        "name": "configuration_metering_metercapacitymaster",
+        "description": "configuration_metering_metercapacitymaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d53da19d-8d69-4e97-9483-ceb32c0cdad7",
+        "name": "configuration_billing_billduedatedays",
+        "description": "configuration_billing_billduedatedays",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3743f160-8cf4-47ba-8112-4d2acc87c0a5",
+        "name": "customerservice_reports_statusreport",
+        "description": "customerservice_reports_statusreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b7831375-f1c5-4f05-93fb-a494f5fc1ea0",
+        "name": "metering_reports_junctionwisereports_readingsunenteredreportbycycleandyear",
+        "description": "metering_reports_junctionwisereports_readingsunenteredreportbycycleandyear",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "85a9f1ef-d534-446a-9d4b-1063b1378d64",
+        "name": "configuration_general_province",
+        "description": "configuration_general_province",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b818547b-6800-49b7-92cb-de292bb9373f",
+        "name": "billing_otheractivities_updatechanges",
+        "description": "billing_otheractivities_updatechanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "49e2c1cf-aab0-44ce-904f-d44f35c90bb6",
+        "name": "helpdesk_registration_complaintstatus",
+        "description": "helpdesk_registration_complaintstatus",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "86e609f1-311f-4453-821b-2f64d7916198",
+        "name": "configuration_nsc_appliancemaster",
+        "description": "configuration_nsc_appliancemaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "72487400-023d-4b2d-aed7-23b015e674c1",
+        "name": "configuration_nsc_estimatematerialmaster",
+        "description": "configuration_nsc_estimatematerialmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b9385054-a6cc-4c1b-9284-8851582d2c61",
+        "name": "serviceconnction_online_consumerintemation",
+        "description": "serviceconnction_online_consumerintemation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "98b84c55-fc96-47e7-b544-fbec31d39c43",
+        "name": "configuration_metering_cycleconfiguration",
+        "description": "configuration_metering_cycleconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ad715b32-c0f6-4d0d-a04f-5ad342f9d838",
+        "name": "configuration_office_fieldstaffemployee",
+        "description": "configuration_office_fieldstaffemployee",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "30ec9e1b-9fb5-4a1a-b482-a594e9f635f5",
+        "name": "customerservice_customerservice_customerchanges_areachangescomplaints",
+        "description": "customerservice_customerservice_customerchanges_areachangescomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f0691351-9584-4b8e-8387-1403796cde55",
+        "name": "customerservice_customerservice_customerchanges_namecorrectionrequests",
+        "description": "customerservice_customerservice_customerchanges_namecorrectionrequests",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "37629c1c-3a29-4c74-8817-03b0245bf472",
+        "name": "admin",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_payment",
+            "configuration_metering",
+            "configuration_nsc",
+            "configuration_network",
+            "manage-users",
+            "offline_access",
+            "configuration_billing",
+            "configuration_csc",
+            "uma_authorization",
+            "user",
+            "configuration_office"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "771132c0-c7f8-4ce6-9e36-d6ca58bed1c4",
+        "name": "payments_installmentpayments_installmentpermanentcancellation",
+        "description": "payments_installmentpayments_installmentpermanentcancellation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7b2412b1-90c2-47c5-be1a-0119e0b193c7",
+        "name": "customerservice_customerservice_customerchanges_titletransferchanges",
+        "description": "customerservice_customerservice_customerchanges_titletransferchanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "495d1ec2-099e-4d1e-86c8-a67f795ac046",
+        "name": "billing_billing_billpreview_groupbillprint",
+        "description": "billing_billing_billpreview_groupbillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "873b2e5b-04bd-4077-9ea0-cc2e80f4e01f",
+        "name": "helpdesk_registration",
+        "description": "helpdesk_registration",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "helpdesk_registration_complaintstatus",
+            "helpdesk_registration_registration"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f431fd18-eb6b-45d8-af61-a9574799d361",
+        "name": "billing_billing_bill",
+        "description": "billing_billing_bill",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_billing_bill_adjustments",
+            "billing_billing_bill_finalbillrequest"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "565d5368-bf27-493c-87fe-5d1b770e9911",
+        "name": "metering_reports_reportslist_handheldimportdatareport",
+        "description": "metering_reports_reportslist_handheldimportdatareport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3f98c93f-2dc8-4c84-897e-b9bbfa822181",
+        "name": "billing_otheractivities_offlineadjustments",
+        "description": "billing_otheractivities_offlineadjustments",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "91d6f3ed-344d-4cf3-8541-d12abaf16540",
+        "name": "customerservice_customerservice_customerchanges_areacorrectionrequests",
+        "description": "customerservice_customerservice_customerchanges_areacorrectionrequests",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f6ad4689-ec81-4523-9123-2b896877f887",
+        "name": "configuration_office_natureofpremises",
+        "description": "configuration_office_natureofpremises",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "089b7cd7-a375-4963-8760-e810ca2c735e",
+        "name": "billing_billing_smsbilling_bulkmobilenoupload",
+        "description": "billing_billing_smsbilling_bulkmobilenoupload",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "67c6e5f7-259f-43fb-a5e0-b05e5d3e11ef",
+        "name": "serviceconnction_lpu_assignsiteinspectionmemberbyecd",
+        "description": "serviceconnction_lpu_assignsiteinspectionmemberbyecd",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ed13b5c7-edba-4154-a0d1-f2f8959ea5be",
+        "name": "customerservice_customerservice_customerchanges_tariffchanges",
+        "description": "customerservice_customerservice_customerchanges_tariffchanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7f184946-8d8e-4089-81df-966973015449",
+        "name": "serviceconnction_online_storeapproval",
+        "description": "serviceconnction_online_storeapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e64829ef-820d-4206-af31-f2d64f8136ab",
+        "name": "billing_quicklinks_customermobilenumberupdate",
+        "description": "billing_quicklinks_customermobilenumberupdate",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "31ddab1a-6816-4c15-83d5-9a5d789f9b02",
+        "name": "serviceconnction_lpu_electrotechnicdepartment",
+        "description": "serviceconnction_lpu_electrotechnicdepartment",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f0c3239e-ae8d-48fa-90e6-00b2e618c6a8",
+        "name": "serviceconnction_offline",
+        "description": "serviceconnction_offline",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "serviceconnction_offline_nscoffline",
+            "serviceconnction_offline_nscfeedbacklist"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "767c773b-1f82-4b62-81c4-e8ce222058d2",
+        "name": "serviceconnction_online_returnedestimate",
+        "description": "serviceconnction_online_returnedestimate",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "443bf81a-28b1-40f1-9d65-f4a53c3a5f17",
+        "name": "payments_installmentspayments",
+        "description": "payments_installmentspayments",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "payments_installmentpayments_installmentconfiguration",
+            "payments_installmentpayments_duplicateinstallmentacknowledgment",
+            "payments_installmentpayments_installmentconfigurationapproval",
+            "payments_installmentpayments_reconnectioninstallmentconfiguration",
+            "payments_installmentpayments_installmentblacklist",
+            "payments_installmentpayments_installmentpermanentcancellation"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "93bcb192-f3d0-41ab-b309-3ff86ac4020b",
+        "name": "configuration_payment_paymentmodedetails",
+        "description": "configuration_payment_paymentmodedetails",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d0ce380f-1339-44ef-ac2c-00195c3ed8ae",
+        "name": "serviceconnction_lpu_assignrelaydepartmentmemberbyrm",
+        "description": "serviceconnction_lpu_assignrelaydepartmentmemberbyrm",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "8296fa99-a999-41e9-92eb-8c27408512bb",
+        "name": "configuration_network_consumergroupdetails",
+        "description": "configuration_network_consumergroupdetails",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7048d325-dcab-4b56-b511-e2979281d57b",
+        "name": "serviceconnction_lpu_firstsiteinspectionreportapprovalod",
+        "description": "serviceconnction_lpu_firstsiteinspectionreportapprovalod",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cb609b95-f6de-40b8-903a-7ac7b39ae8ba",
+        "name": "metering_meterstock_meterstockdetails_meterbulkupload",
+        "description": "metering_meterstock_meterstockdetails_meterbulkupload",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f2c7a258-8548-459a-bc46-5daaa98f3d01",
+        "name": "configuration_payment_mhawallaconfiguration",
+        "description": "configuration_payment_mhawallaconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bf08db8c-696a-4afa-9717-499c6c6877e9",
+        "name": "serviceconnction_lpu_technicalinspectionapprovalbyped",
+        "description": "serviceconnction_lpu_technicalinspectionapprovalbyped",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "581a1204-d535-4c33-94e7-1bfec483a23c",
+        "name": "customerservice_escalations_secondescalations",
+        "description": "customerservice_escalations_secondescalations",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "97d2233f-43d0-48e3-851b-998cf1fe4ae8",
+        "name": "serviceconnction_online_dispatch",
+        "description": "serviceconnction_online_dispatch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "034c9f2a-4d42-4978-99c2-57c4f6788551",
+        "name": "configuration_metering_consumptionpercentageconfiguration",
+        "description": "configuration_metering_consumptionpercentageconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "dce0c565-25cc-4ce0-9a83-3d6213af2146",
+        "name": "configuration_network_areamaster",
+        "description": "configuration_network_areamaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f876fcb9-d382-48ff-aa70-aae2b756e0a5",
+        "name": "metering_reports_junctionwisereports_nilconsumptionreportbycycleandyear",
+        "description": "metering_reports_junctionwisereports_nilconsumptionreportbycycleandyear",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "dfef1e8f-bbd3-49ec-b98a-16e5a5066295",
+        "name": "customerservice_ecallreports",
+        "description": "customerservice_ecallreports",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_ecallreports_feedbackreports",
+            "customerservice_ecallreports_ecallreports"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1cd71308-5862-41f6-b6c3-2edce4daf1bb",
+        "name": "customerservice_customerservice_billingrelatedcomplaints",
+        "description": "customerservice_customerservice_billingrelatedcomplaints",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_billingrelatedcomplaints_permanentdisconnectionserviceorder",
+            "customerservice_customerservice_billingrelatedcomplaints_complaintsunderbillrevision"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e9dc49c0-0c9e-4729-b3d0-281bba4bdd79",
+        "name": "offline_access",
+        "description": "${role_offline-access}",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f779f274-44d7-43c9-a3a9-bd145bc84236",
+        "name": "configuration_billing_processconfiguration",
+        "description": "configuration_billing_processconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "43977b8b-dcda-4a1d-bf75-e32144fc2fc6",
+        "name": "configuration_metering_meterstatusmaster",
+        "description": "configuration_metering_meterstatusmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "badbf654-5bed-4311-ae7e-76f293588c2d",
+        "name": "configuration_office_designationmaster",
+        "description": "configuration_office_designationmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6e0c8fc0-837b-486f-b786-be78179723ef",
+        "name": "customerservice_customerservice_supplyrelatedcomplaints",
+        "description": "customerservice_customerservice_supplyrelatedcomplaints",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_supplyrelatedcomplaints_supplyrelatedcomplaints"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5665f10a-1fa6-470f-8512-0e96dcd8b2e4",
+        "name": "configuration_metering_zonetariffrelationconfiguration",
+        "description": "configuration_metering_zonetariffrelationconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9a267fba-51d2-44fe-9fc2-bc806bc08ff0",
+        "name": "customerservice_customerservice_queryservice_dispatchlist",
+        "description": "customerservice_customerservice_queryservice_dispatchlist",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e447a0c6-c27c-413d-bfe9-7ef10a04ebd9",
+        "name": "billing_billing_bill_adjustments",
+        "description": "billing_billing_bill_adjustments",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "82832cea-e9c9-4233-b5ee-2922919b3cb8",
+        "name": "configuration_payment",
+        "description": "configure all payment parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_payment_paymentmodedetails",
+            "configuration_payment_installmentapprovallimit",
+            "configuration_payment_countermaster",
+            "configuration_payment_installmentpenalty",
+            "configuration_payment_branchuserrelation",
+            "configuration_payment_feepenaltyconfiguration",
+            "configuration_payment_extendedmaxamount",
+            "configuration_payment_counteractivation",
+            "configuration_payment_postingdaysconfiguration",
+            "configuration_payment_bankmaster",
+            "configuration_payment_thirdpartypaymentregistration",
+            "configuration_payment_counterverification",
+            "configuration_payment_bankbranch",
+            "configuration_payment_lpufeeconfiguration",
+            "configuration_payment_mhawallaconfiguration",
+            "configuration_payment_bankuserrelation"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c8eb967e-0ddc-40c2-a33e-6d141fd4f056",
+        "name": "metering_reports_reportslist",
+        "description": "metering_reports_reportslist",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_reports_reportslist_handheldexport",
+            "metering_reports_reportslist_readinglogreport",
+            "metering_reports_reportslist_transformersundermeterreader",
+            "metering_reports_reportslist_zonedatereport",
+            "metering_reports_reportslist_meterdetailsreport",
+            "metering_reports_reportslist_handheldimportdatareport"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4246162b-4304-4caf-a671-2d4c1fc90f9b",
+        "name": "metering_reports_reportslist_readinglogreport",
+        "description": "metering_reports_reportslist_readinglogreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "83a91557-4f4e-44b9-a61b-ba2b6112e72c",
+        "name": "serviceconnction_lpu_pedmanager",
+        "description": "serviceconnction_lpu_pedmanager",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0ff95a50-28cf-41e6-ad13-846ef26d7f0a",
+        "name": "billing_otheractivities_dailybillprint",
+        "description": "billing_otheractivities_dailybillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "555bc16e-bfd5-42db-9c81-b96ed2b4f87e",
+        "name": "serviceconnction_lpu_timeallocation",
+        "description": "serviceconnction_lpu_timeallocation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ca11ba16-5eac-4d53-a2b0-477a608537e2",
+        "name": "billing_otheractivities_billschedule",
+        "description": "billing_otheractivities_billschedule",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "08a58d77-ea8a-4449-9e05-74df9f54a3f4",
+        "name": "customerservice_customerservice_billingrelatedcomplaints_permanentdisconnectionserviceorder",
+        "description": "customerservice_customerservice_billingrelatedcomplaints_permanentdisconnectionserviceorder",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ecb3a309-dc09-4281-8ac4-2287228d2721",
+        "name": "helpdesk_dispatch",
+        "description": "helpdesk_dispatch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2f8018ad-9332-4e94-9408-091eb5c7301f",
+        "name": "configuration_nsc_activitynaster",
+        "description": "configuration_nsc_activitynaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d703e89f-b2c3-4713-8cb9-edae012b314b",
+        "name": "serviceconnction_lpu_firstsiteinspectionreportapprovalmd",
+        "description": "serviceconnction_lpu_firstsiteinspectionreportapprovalmd",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "b2213caf-824a-4364-a9dd-5ccae0ec5762",
+        "name": "customerservice_ecallregistration_ivrsregistration",
+        "description": "customerservice_ecallregistration_ivrsregistration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "59499115-cc26-4ba1-a97b-cbafdab74311",
+        "name": "customerservice_customerservice_queryservice_closedfinalbillrequest",
+        "description": "customerservice_customerservice_queryservice_closedfinalbillrequest",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "41cb587e-e9d4-49e8-9f73-e28ef519f5f8",
+        "name": "customerservice_querymodification_debitjournalentity",
+        "description": "customerservice_querymodification_debitjournalentity",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "faf5ac59-59a0-482b-8136-a27122c62ab5",
+        "name": "configuration_metering",
+        "description": "configure all metering parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_metering_zonetariffrelationconfiguration",
+            "configuration_metering_meterreaderholidaydetailsmaster",
+            "configuration_metering_meterstatusmaster",
+            "configuration_metering_metermakeserials",
+            "configuration_metering_zoneconfiguration",
+            "configuration_metering_activitymaster",
+            "configuration_metering_zonecyclerelation",
+            "configuration_metering_zoneofficerelationconfiguration",
+            "configuration_metering_metermakedetails",
+            "configuration_metering_consumptionpercentageconfiguration",
+            "configuration_metering_cycleconfiguration",
+            "configuration_metering_metercapacitymaster",
+            "configuration_metering_activityrelationconfiguration",
+            "configuration_metering_metertype"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "fee3ea89-1539-4ee7-b91d-025df289758f",
+        "name": "payments_grouppayments_billreceiptcancellation",
+        "description": "payments_grouppayments_billreceiptcancellation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2407504a-7377-41ab-a727-25483187fc1a",
+        "name": "customerservice_escalations",
+        "description": "customerservice_escalations",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_escalations_secondescalations",
+            "customerservice_escalations_exp",
+            "customerservice_escalations_beyondescalation",
+            "customerservice_escalations_firstescalations"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "02d24b3a-7622-4452-a6d9-b669fc562a99",
+        "name": "configuration_nsc",
+        "description": "configure all nsc parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_nsc_activitynaster",
+            "configuration_nsc_metricmaster",
+            "configuration_nsc_documentmaster",
+            "configuration_nsc_appliancemaster",
+            "configuration_nsc_unitmaster",
+            "configuration_nsc_categorydocumentmaster",
+            "configuration_nsc_estimatematerialmaster"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "15fdccea-2a07-4ea0-aca2-e0037ace52dd",
+        "name": "serviceconnction_online_loadapproval",
+        "description": "serviceconnction_online_loadapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7391b42f-0c72-4c85-874e-9a85292ab899",
+        "name": "customerservice_reports",
+        "description": "customerservice_reports",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_reports_namechangereport",
+            "customerservice_reports_rjwrongpostingreport",
+            "customerservice_reports_rectifiedcomplaintreport",
+            "customerservice_reports_statusreport",
+            "customerservice_reports_queryaknowledgereport",
+            "customerservice_reports_phasechangesreport",
+            "customerservice_reports_catagorychanges",
+            "customerservice_reports_rjwrongpostpendingreport",
+            "customerservice_reports_queryregisteredreport"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "da5d4f0c-74a8-475a-91e7-223af52a4f53",
+        "name": "customerservice_customerservice_customerchanges_areacorrectioncomplaints",
+        "description": "customerservice_customerservice_customerchanges_areacorrectioncomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "75432216-3ebb-4d1f-ae1a-afd75e48757e",
+        "name": "customerservice_reports_queryregisteredreport",
+        "description": "customerservice_reports_queryregisteredreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9a903904-f84a-443f-ada3-7435db031fe5",
+        "name": "serviceconnction_online_serviceregistration",
+        "description": "serviceconnction_online_serviceregistration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "47807f77-18af-4ef9-a6e4-14938bbcad73",
+        "name": "billing_otheractivities",
+        "description": "billing_otheractivities",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_otheractivities_billstopedtolive",
+            "billing_otheractivities_billstopedservices",
+            "billing_otheractivities_crmd",
+            "billing_otheractivities_dailybillprint",
+            "billing_otheractivities_primaryupdate",
+            "billing_otheractivities_updatechanges",
+            "billing_otheractivities_billstopedservicesapproval",
+            "billing_otheractivities_offlineadjustments",
+            "billing_otheractivities_approvalsforcustomerchanges",
+            "billing_otheractivities_caad",
+            "billing_otheractivities_billschedule"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "e12db521-8c2f-431e-b4df-4153edd6f2ae",
+        "name": "configuration_metering_activityrelationconfiguration",
+        "description": "configuration_metering_activityrelationconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c67eb3be-a95f-40e6-a16f-ba2dd614b3f4",
+        "name": "billing_reports",
+        "description": "billing_reports",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "05a82610-99db-4705-b95d-529fae4bdf2b",
+        "name": "configuration_billing_voltagegroupmaster",
+        "description": "configuration_billing_voltagegroupmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2c51ea9e-9f68-4b62-a02e-b5803e3136e7",
+        "name": "serviceconnction_online_inboxuserview",
+        "description": "serviceconnction_online_inboxuserview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "06c7c3b8-5f54-41dc-8b14-51ff16ac451a",
+        "name": "customerservice_reports_catagorychanges",
+        "description": "customerservice_reports_catagorychanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f7e6539a-50a8-4ffd-9160-65313c657e57",
+        "name": "customerservice_ecallregistration_feedbackcaptured",
+        "description": "customerservice_ecallregistration_feedbackcaptured",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "98ba8ce2-26b4-457f-a251-c67c422bc36d",
+        "name": "configuration_csc_approvallimit",
+        "description": "configuration_csc_approvallimit",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ab7861b5-3a26-4688-9ece-0b14dd494e63",
+        "name": "customerservice_customerservice_meterrelatedcomplaints",
+        "description": "customerservice_customerservice_meterrelatedcomplaints",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_customerservice_meterrelatedcomplaints_joborderlist",
+            "customerservice_customerservice_meterrelatedcomplaints_complaintunderlabapproval",
+            "customerservice_customerservice_meterrelatedcomplaints_calibrationreport"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "66e5d4fe-e8ba-4e5f-afb7-23a28a382830",
+        "name": "payments_collections",
+        "description": "payments_collections",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "4f874241-dca5-4994-8a25-8e89933e67e5",
+        "name": "serviceconnction_lpu_nmapprovaltocheckdtr",
+        "description": "serviceconnction_lpu_nmapprovaltocheckdtr",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c3027703-e41f-4c0c-81d1-feb7d306365c",
+        "name": "configuration_payment_branchuserrelation",
+        "description": "configuration_payment_branchuserrelation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6ca2feb0-9530-4d71-9f27-9d1a49762e0f",
+        "name": "customerservice_ecallreports_ecallreports",
+        "description": "customerservice_ecallreports_ecallreports",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "220dbe6f-b6ee-4099-bdd1-f9045c40823f",
+        "name": "configuration_csc_requestmaster",
+        "description": "configuration_csc_requestmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6cc5dd0e-3e7d-4067-b071-6f676c13fcdf",
+        "name": "serviceconnction_offline_nscfeedbacklist",
+        "description": "serviceconnction_offline_nscfeedbacklist",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "92bf04ef-36ef-40f3-aaf6-a9f5175b4ef0",
+        "name": "configuration_payment_installmentapprovallimit",
+        "description": "configuration_payment_installmentapprovallimit",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d67b7fdf-ca9e-4f47-ad34-f2ec733941d3",
+        "name": "metering_otheractivities_meterrelatedcomplaints",
+        "description": "metering_otheractivities_meterrelatedcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ee5a76c2-ab83-486d-ad69-a8c768c5d36e",
+        "name": "configuration_metering_meterreaderholidaydetailsmaster",
+        "description": "configuration_metering_meterreaderholidaydetailsmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "9aaff099-6d4c-4aaf-a961-0de1b34a9e24",
+        "name": "customerservice_querymodification_rjapproval",
+        "description": "customerservice_querymodification_rjapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "69960331-327f-4f99-8d30-21daf8bcf8d0",
+        "name": "customerservice_reports_phasechangesreport",
+        "description": "customerservice_reports_phasechangesreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f902d796-9774-42d3-9ca8-fe970217f00b",
+        "name": "customerservice_ecallregistration_complaintstatus",
+        "description": "customerservice_ecallregistration_complaintstatus",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "356eb6d2-5155-45f4-88e8-ea4bfccf71a2",
+        "name": "customerservice_aknowledgments_dispatch",
+        "description": "customerservice_aknowledgments_dispatch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "36bad4bb-b430-4e74-8f2e-f2ff1f8408f5",
+        "name": "configuration_payment_countermaster",
+        "description": "configuration_payment_countermaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ca724d0c-314e-486c-922c-d5b097fe79ba",
+        "name": "metering_mobileapprovals_casebookforlpu",
+        "description": "metering_mobileapprovals_casebookforlpu",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "ae04d31a-e474-4386-96a3-e268cdb45603",
+        "name": "helpdesk_complaintstobeclosed_rectifiedcomplaints",
+        "description": "helpdesk_complaintstobeclosed_rectifiedcomplaints",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "3db62079-7593-4aca-ac17-bd2f82e77ff9",
+        "name": "billing_otheractivities_billstopedtolive",
+        "description": "billing_otheractivities_billstopedtolive",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "bbd8755e-f6d8-4ba2-92d8-c68c9cb460cc",
+        "name": "serviceconnction_online",
+        "description": "serviceconnction_online",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "serviceconnction_online_siteinspectionrejection",
+            "serviceconnction_online_returnedestimate",
+            "serviceconnction_online_dispatch",
+            "serviceconnction_online_gridextensionbill",
+            "serviceconnction_online_inboxuserview",
+            "serviceconnction_online_commissionofinstallation",
+            "serviceconnction_online_rejectedservices",
+            "serviceconnction_online_accountnumbergeneration",
+            "serviceconnction_online_approvestransformerupdation",
+            "serviceconnction_online_siteinspection",
+            "serviceconnction_online_consumerintemation",
+            "serviceconnction_online_wocompletion",
+            "serviceconnction_online_estimateapproval",
+            "serviceconnction_online_servicerelease",
+            "serviceconnction_online_permanentlyrejected",
+            "serviceconnction_online_newmeterboxinstallation",
+            "serviceconnction_online_transformerupdation",
+            "serviceconnction_online_storeapproval",
+            "serviceconnction_online_loadapproval",
+            "serviceconnction_online_estimate",
+            "serviceconnction_online_serviceregistration"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cf839593-abcd-4219-b2a6-b0bfa6a6e192",
+        "name": "metering_meterreading_meterreadingentity",
+        "description": "metering_meterreading_meterreadingentity",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5bd52afc-3384-4b38-9d11-72cde39ab6ef",
+        "name": "customerservice_ecallregistration",
+        "description": "customerservice_ecallregistration",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "customerservice_ecallregistration_feedbackofcomplaint",
+            "customerservice_ecallregistration_feedbackcaptured",
+            "customerservice_ecallregistration_complaintstatus",
+            "customerservice_ecallregistration_ivrsregistration"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "302cd32e-6e35-4f2c-918e-0000ccd5ae70",
+        "name": "configuration_payment_counterverification",
+        "description": "configuration_payment_counterverification",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "cef4e8d0-18af-4915-862f-508db3cd0f5a",
+        "name": "customerservice_escalations_firstescalations",
+        "description": "customerservice_escalations_firstescalations",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d9b0709e-7e95-4336-9bb7-d9902803737b",
+        "name": "customerservice_customerservice_meterrelatedcomplaints_complaintunderlabapproval",
+        "description": "customerservice_customerservice_meterrelatedcomplaints_complaintunderlabapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "0c4bf4fd-e073-4c76-98cf-6a4d17c78c9b",
+        "name": "configuration_network_ptrmaster",
+        "description": "configuration_network_ptrmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1093e8d2-4b92-4037-a558-4aa652648859",
+        "name": "configuration_payment_thirdpartypaymentregistration",
+        "description": "configuration_payment_thirdpartypaymentregistration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "efcb1c0a-8146-478e-87e5-3a386dcfee03",
+        "name": "configuration_office_officemaster",
+        "description": "configuration_office_officemaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "58f492fe-e0f4-4c19-811a-ab9061efa88d",
+        "name": "metering_reports_junctionwisereports_consumptionreport",
+        "description": "metering_reports_junctionwisereports_consumptionreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "209e9207-d207-4988-b6ad-685e3e6afc77",
+        "name": "configuration_network_feedermaster",
+        "description": "configuration_network_feedermaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "d707b4e8-0a48-4a5d-8e79-970ad4ae704b",
+        "name": "customerservice_reports_queryaknowledgereport",
+        "description": "customerservice_reports_queryaknowledgereport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "839411eb-826f-42e6-84d7-59227ee6851c",
+        "name": "payments_userapproval",
+        "description": "payments_userapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "86d10d96-cb96-4093-8f69-f722db2b0d0e",
+        "name": "metering_mobileapprovals_mssapproval",
+        "description": "metering_mobileapprovals_mssapproval",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6c6a8794-b861-4113-92e1-ab7fd9961f48",
+        "name": "billing_otheractivities_approvalsforcustomerchanges",
+        "description": "billing_otheractivities_approvalsforcustomerchanges",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "98e5694c-4415-4b02-9cc0-29bc4f35e97c",
+        "name": "serviceconnction_lpu_servicerelease",
+        "description": "serviceconnction_lpu_servicerelease",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "285c1dda-0f97-49c4-be28-cdec3e6e2107",
+        "name": "serviceconnction_lpu_compensationchargesestimation",
+        "description": "serviceconnction_lpu_compensationchargesestimation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "53c84728-cd9e-4071-a194-c2b17b6ac2f9",
+        "name": "serviceconnction_online_servicerelease",
+        "description": "serviceconnction_online_servicerelease",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "eab8f1a5-3e2c-471a-bf24-f55155802956",
+        "name": "metering_meterreading_meterreadingsheet",
+        "description": "metering_meterreading_meterreadingsheet",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "77201872-7501-412c-82ea-b9136eada5bc",
+        "name": "serviceconnction_online_transformerupdation",
+        "description": "serviceconnction_online_transformerupdation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "da282d2a-211d-45b6-9afe-06d4d65a1900",
+        "name": "billing_billing_smsbilling_senddeliveryreport",
+        "description": "billing_billing_smsbilling_senddeliveryreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c117b86c-6b49-4c6c-a6a5-446cfc83c6e1",
+        "name": "serviceconnction_lpu_secondconsumerintimation",
+        "description": "serviceconnction_lpu_secondconsumerintimation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "fa0a5250-543b-44ec-a880-8a5fd74c3363",
+        "name": "metering_quicklinks",
+        "description": "metering_quicklinks",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "metering_quicklinks_meterstatus",
+            "metering_quicklinks_customersearch"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "1f53c566-a270-4024-af6e-6a5ba9fda4bd",
+        "name": "serviceconnction_lpu_relayreportapprovalbyrm",
+        "description": "serviceconnction_lpu_relayreportapprovalbyrm",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "2a3d99e0-584a-43c3-8ab2-f80a926839df",
+        "name": "billing_billing_billpreview_duplicatefinalbillprint",
+        "description": "billing_billing_billpreview_duplicatefinalbillprint",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "5f3ae4a5-b9bb-4f60-ab78-f8ca118b6dec",
+        "name": "billing_billing",
+        "description": "billing_billing",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "billing_billing_smsbilling",
+            "billing_billing_billprocess",
+            "billing_billing_billpreview",
+            "billing_billing_bill"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "60ff86d9-0920-4308-9bde-bf1d24889606",
+        "name": "billing_otheractivities_billstopedservices",
+        "description": "billing_otheractivities_billstopedservices",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "23f75207-00aa-438a-bee3-7afe7d9e1678",
+        "name": "configuration_network_meterboxmaster",
+        "description": "configuration_network_meterboxmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "779defaa-08eb-4704-a4f0-bf1e86b0ad9a",
+        "name": "serviceconnction_offline_nscoffline",
+        "description": "serviceconnction_offline_nscoffline",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "6004c2c5-d338-47c7-a69a-fb62daf9d79e",
+        "name": "serviceconnction_lpu_junctionstationassigningmember",
+        "description": "serviceconnction_lpu_junctionstationassigningmember",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "c4da5de9-84e0-4d41-8de3-89e4098c831b",
+        "name": "metering_reports_reportslist_handheldexport",
+        "description": "metering_reports_reportslist_handheldexport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "f136ae04-8644-4a43-b1d2-22dca47149a7",
+        "name": "configuration_payment_feepenaltyconfiguration",
+        "description": "configuration_payment_feepenaltyconfiguration",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "eb2a0cb7-819d-4b09-a048-3152c2ba9dd6",
+        "name": "customerservice_ecallreports_feedbackreports",
+        "description": "customerservice_ecallreports_feedbackreports",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "08bf8f62-2d1f-478c-831f-c2308a500f2c",
+        "name": "metering_reports_junctionwisereports_consumerwisereadingentryreport",
+        "description": "metering_reports_junctionwisereports_consumerwisereadingentryreport",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "42cbb793-7518-422d-b70e-cd26d0ad94db",
+        "name": "customerservice_aknowledgments_complaintstatus",
+        "description": "customerservice_aknowledgments_complaintstatus",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "60ed0988-960e-4ab1-958e-d2ca9a9c31b7",
+        "name": "configuration_billing_categorytypemaster",
+        "description": "configuration_billing_categorytypemaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "19a210c9-864d-4a3f-ac7e-a9c7079ab628",
+        "name": "configuration_csc",
+        "description": "configure all csc parts",
+        "composite": true,
+        "composites": {
+          "realm": [
+            "configuration_csc_requesttype",
+            "configuration_csc_requestmaster",
+            "configuration_csc_statusconfiguration",
+            "configuration_csc_approvallimit"
+          ]
+        },
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "7b4732f8-d310-4282-a276-13a7b179a6a3",
+        "name": "serviceconnction_lpu_cooreview",
+        "description": "serviceconnction_lpu_cooreview",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "52732d91-9fd8-4768-84e0-8fc9dd38f10b",
+        "name": "configuration_payment_installmentpenalty",
+        "description": "configuration_payment_installmentpenalty",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "29ddffcd-35d5-4ca7-a105-195fbb4e0124",
+        "name": "configuration_metering_zonecyclerelation",
+        "description": "configuration_metering_zonecyclerelation",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "135a936b-c2d7-47f5-9f1e-7d8bbf4d9152",
+        "name": "billing_quicklinks_customersearch",
+        "description": "billing_quicklinks_customersearch",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      },
+      {
+        "id": "079b2405-fe44-4ef6-8e52-ca053547df77",
+        "name": "configuration_nsc_metricmaster",
+        "description": "configuration_nsc_metricmaster",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "ebreshna",
+        "attributes": {}
+      }
+    ],
+    "client": {
+      "realm-management": [
+        {
+          "id": "21a49468-9e5f-48d1-bd30-124ad5e02b19",
+          "name": "query-groups",
+          "description": "${role_query-groups}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "690ddd60-f9a8-4499-b657-1443d9f4dc8e",
+          "name": "query-realms",
+          "description": "${role_query-realms}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "1fe7cbd1-fc3c-44a7-8748-3d5ec42cfbb4",
+          "name": "manage-realm",
+          "description": "${role_manage-realm}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "319fd1d5-d07d-423a-8ce2-81e5e164732c",
+          "name": "view-realm",
+          "description": "${role_view-realm}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "0a8c0979-6c9e-4857-886d-3aa7ed4ffab2",
+          "name": "view-events",
+          "description": "${role_view-events}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "75b97740-5632-4cb9-94eb-bda6fc536da4",
+          "name": "view-users",
+          "description": "${role_view-users}",
+          "composite": true,
+          "composites": {
+            "client": {
+              "realm-management": [
+                "query-groups",
+                "query-users"
+              ]
+            }
+          },
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "1e395064-6e17-4e6c-9949-d542256521c9",
+          "name": "view-authorization",
+          "description": "${role_view-authorization}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "6a8d0f11-8a4f-4682-8b09-06b73464b0d7",
+          "name": "manage-clients",
+          "description": "${role_manage-clients}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "12c6edda-6d27-41f6-ba87-8c065e5e6610",
+          "name": "manage-users",
+          "description": "${role_manage-users}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "1fc8e408-9d9d-4455-b7ad-29cc8a07cd6c",
+          "name": "query-users",
+          "description": "${role_query-users}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "06a02ac5-ce75-4f7b-9b23-272898bbeed6",
+          "name": "realm-admin",
+          "description": "${role_realm-admin}",
+          "composite": true,
+          "composites": {
+            "client": {
+              "realm-management": [
+                "query-groups",
+                "query-realms",
+                "manage-realm",
+                "view-realm",
+                "view-events",
+                "view-users",
+                "view-authorization",
+                "manage-clients",
+                "manage-users",
+                "query-users",
+                "manage-events",
+                "impersonation",
+                "view-identity-providers",
+                "view-clients",
+                "manage-identity-providers",
+                "query-clients",
+                "manage-authorization",
+                "create-client"
+              ]
+            }
+          },
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "61083dae-6572-463b-80b2-12b3975e7452",
+          "name": "manage-events",
+          "description": "${role_manage-events}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "c03d9d33-c1c4-4c80-8120-4701b9d93af6",
+          "name": "impersonation",
+          "description": "${role_impersonation}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "5ee318b5-9322-4aad-beb0-909dc586b20f",
+          "name": "view-clients",
+          "description": "${role_view-clients}",
+          "composite": true,
+          "composites": {
+            "client": {
+              "realm-management": [
+                "query-clients"
+              ]
+            }
+          },
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "30adde29-867b-47af-9261-c61c8a6183d8",
+          "name": "view-identity-providers",
+          "description": "${role_view-identity-providers}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "ac2adc37-9007-4093-a5b4-7b2f61b2bcdb",
+          "name": "manage-identity-providers",
+          "description": "${role_manage-identity-providers}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "d796687f-145a-442a-a9b7-f8309da53b8f",
+          "name": "manage-authorization",
+          "description": "${role_manage-authorization}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "d44b9eb2-bee8-4ccb-84f8-ce568ee2609f",
+          "name": "query-clients",
+          "description": "${role_query-clients}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        },
+        {
+          "id": "0df43614-ed7a-406d-8bc4-a269f26125c9",
+          "name": "create-client",
+          "description": "${role_create-client}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+          "attributes": {}
+        }
+      ],
+      "security-admin-console": [],
+      "admin-cli": [],
+      "hr": [],
+      "account-console": [],
+      "ebreshna-app": [],
+      "broker": [
+        {
+          "id": "66208775-4829-4ecc-8270-ec70d9f2c527",
+          "name": "read-token",
+          "description": "${role_read-token}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "f0f2e5a0-5fe2-4624-8d86-1fd2ae15871c",
+          "attributes": {}
+        }
+      ],
+      "account": [
+        {
+          "id": "8b231616-43db-46de-9fb5-cde680d194cd",
+          "name": "manage-consent",
+          "description": "${role_manage-consent}",
+          "composite": true,
+          "composites": {
+            "client": {
+              "account": [
+                "view-consent"
+              ]
+            }
+          },
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        },
+        {
+          "id": "67b6c8d3-5114-48ff-a2d7-a371838b357d",
+          "name": "manage-account",
+          "description": "${role_manage-account}",
+          "composite": true,
+          "composites": {
+            "client": {
+              "account": [
+                "manage-account-links"
+              ]
+            }
+          },
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        },
+        {
+          "id": "88394d7d-cbd1-4ede-a6f4-9e90b5f757f3",
+          "name": "manage-account-links",
+          "description": "${role_manage-account-links}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        },
+        {
+          "id": "ed9c77b1-6086-4061-9915-c397ddbf04d7",
+          "name": "view-consent",
+          "description": "${role_view-consent}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        },
+        {
+          "id": "e1745b89-d65c-43ef-b330-597312a93684",
+          "name": "view-applications",
+          "description": "${role_view-applications}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        },
+        {
+          "id": "83594c1f-a02d-40b1-9684-b8b4d26ea61c",
+          "name": "view-profile",
+          "description": "${role_view-profile}",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+          "attributes": {}
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "a5e15d0e-e05e-420c-bc5b-4cbe7919bdd8",
+      "name": "admins",
+      "path": "/admins",
+      "attributes": {},
+      "realmRoles": [
+        "user",
+        "admin"
+      ],
+      "clientRoles": {},
+      "subGroups": []
+    }
+  ],
+  "defaultRoles": [
+    "offline_access"
+  ],
+  "requiredCredentials": [
+    "password"
+  ],
+  "otpPolicyType": "totp",
+  "otpPolicyAlgorithm": "HmacSHA1",
+  "otpPolicyInitialCounter": 0,
+  "otpPolicyDigits": 6,
+  "otpPolicyLookAheadWindow": 1,
+  "otpPolicyPeriod": 30,
+  "otpSupportedApplications": [
+    "FreeOTP",
+    "Google Authenticator"
+  ],
+  "webAuthnPolicyRpEntityName": "keycloak",
+  "webAuthnPolicySignatureAlgorithms": [
+    "ES256"
+  ],
+  "webAuthnPolicyRpId": "",
+  "webAuthnPolicyAttestationConveyancePreference": "not specified",
+  "webAuthnPolicyAuthenticatorAttachment": "not specified",
+  "webAuthnPolicyRequireResidentKey": "not specified",
+  "webAuthnPolicyUserVerificationRequirement": "not specified",
+  "webAuthnPolicyCreateTimeout": 0,
+  "webAuthnPolicyAvoidSameAuthenticatorRegister": false,
+  "webAuthnPolicyAcceptableAaguids": [],
+  "webAuthnPolicyPasswordlessRpEntityName": "keycloak",
+  "webAuthnPolicyPasswordlessSignatureAlgorithms": [
+    "ES256"
+  ],
+  "webAuthnPolicyPasswordlessRpId": "",
+  "webAuthnPolicyPasswordlessAttestationConveyancePreference": "not specified",
+  "webAuthnPolicyPasswordlessAuthenticatorAttachment": "not specified",
+  "webAuthnPolicyPasswordlessRequireResidentKey": "not specified",
+  "webAuthnPolicyPasswordlessUserVerificationRequirement": "not specified",
+  "webAuthnPolicyPasswordlessCreateTimeout": 0,
+  "webAuthnPolicyPasswordlessAvoidSameAuthenticatorRegister": false,
+  "webAuthnPolicyPasswordlessAcceptableAaguids": [],
+  "scopeMappings": [
+    {
+      "client": "ebreshna-app",
+      "roles": [
+        "offline_access",
+        "admin",
+        "uma_authorization",
+        "user"
+      ]
+    },
+    {
+      "clientScope": "offline_access",
+      "roles": [
+        "offline_access"
+      ]
+    }
+  ],
+  "clientScopeMappings": {
+    "realm-management": [
+      {
+        "client": "ebreshna-app",
+        "roles": [
+          "view-realm",
+          "view-identity-providers",
+          "manage-identity-providers",
+          "impersonation",
+          "realm-admin",
+          "create-client",
+          "manage-users",
+          "query-realms",
+          "view-authorization",
+          "query-clients",
+          "query-users",
+          "manage-events",
+          "manage-realm",
+          "view-events",
+          "view-users",
+          "view-clients",
+          "manage-authorization",
+          "manage-clients",
+          "query-groups"
+        ]
+      }
+    ],
+    "account": [
+      {
+        "client": "account-console",
+        "roles": [
+          "manage-account"
+        ]
+      },
+      {
+        "client": "ebreshna-app",
+        "roles": [
+          "manage-account",
+          "manage-account-links",
+          "view-profile"
+        ]
+      }
+    ]
+  },
+  "clients": [
+    {
+      "id": "cca4dcd0-16a1-48b6-bd7f-86632e203215",
+      "clientId": "account",
+      "name": "${client_account}",
+      "rootUrl": "${authBaseUrl}",
+      "baseUrl": "/realms/ebreshna/account/",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "defaultRoles": [
+        "manage-account",
+        "view-profile"
+      ],
+      "redirectUris": [
+        "/realms/ebreshna/account/*"
+      ],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "9ec4b6fe-aa66-4153-9988-0324ce1838dd",
+      "clientId": "account-console",
+      "name": "${client_account-console}",
+      "rootUrl": "${authBaseUrl}",
+      "baseUrl": "/realms/ebreshna/account/",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [
+        "/realms/ebreshna/account/*"
+      ],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": true,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "protocolMappers": [
+        {
+          "id": "d5c58631-78da-47ac-b8e6-145bb59fb193",
+          "name": "audience resolve",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-resolve-mapper",
+          "consentRequired": false,
+          "config": {}
+        }
+      ],
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "roles",
+        "profile",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "4382191b-a3c7-458d-904a-35f852f60b0c",
+      "clientId": "admin-cli",
+      "name": "${client_admin-cli}",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": false,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": false,
+      "publicClient": true,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "f0f2e5a0-5fe2-4624-8d86-1fd2ae15871c",
+      "clientId": "broker",
+      "name": "${client_broker}",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "6054c5ec-f01d-4404-816f-b5bd07e7ab85",
+      "clientId": "ebreshna-app",
+      "name": "eBreshna System",
+      "description": "eBreshna System",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [
+        "http://localhost:4200/*"
+      ],
+      "webOrigins": [
+        "*"
+      ],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": false,
+      "publicClient": true,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {
+        "saml.assertion.signature": "false",
+        "saml.force.post.binding": "false",
+        "saml.multivalued.roles": "false",
+        "saml.encrypt": "false",
+        "saml.server.signature": "false",
+        "saml.server.signature.keyinfo.ext": "false",
+        "exclude.session.state.from.auth.response": "false",
+        "saml_force_name_id_format": "false",
+        "saml.client.signature": "false",
+        "tls.client.certificate.bound.access.tokens": "false",
+        "saml.authnstatement": "false",
+        "display.on.consent.screen": "false",
+        "saml.onetimeuse.condition": "false"
+      },
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": true,
+      "nodeReRegistrationTimeout": -1,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "fee608a8-26c3-4292-8376-bb5362ee1fc9",
+      "clientId": "hr",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": false,
+      "publicClient": true,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": true,
+      "nodeReRegistrationTimeout": -1,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "c759a813-b9d7-4bd2-8e6c-1c5087b07b03",
+      "clientId": "realm-management",
+      "name": "${client_realm-management}",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": true,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    },
+    {
+      "id": "fdf4ccec-7f3d-44a6-9490-d45d5280b9ef",
+      "clientId": "security-admin-console",
+      "name": "${client_security-admin-console}",
+      "rootUrl": "${authAdminUrl}",
+      "baseUrl": "/admin/ebreshna/console/",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "alwaysDisplayInConsole": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "**********",
+      "redirectUris": [
+        "/admin/ebreshna/console/*"
+      ],
+      "webOrigins": [
+        "+"
+      ],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "publicClient": true,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": false,
+      "nodeReRegistrationTimeout": 0,
+      "protocolMappers": [
+        {
+          "id": "ad28031b-4b5d-4f5c-813e-282d10090a57",
+          "name": "locale",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "locale",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "locale",
+            "jsonType.label": "String"
+          }
+        }
+      ],
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "profile",
+        "roles",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    }
+  ],
+  "clientScopes": [
+    {
+      "id": "c01442ec-3b90-484c-b847-b3c759b4720c",
+      "name": "address",
+      "description": "OpenID Connect built-in scope: address",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true",
+        "display.on.consent.screen": "true",
+        "consent.screen.text": "${addressScopeConsentText}"
+      },
+      "protocolMappers": [
+        {
+          "id": "b9dd9bfe-fe0c-44f4-9f09-858b11b83c6d",
+          "name": "address",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-address-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.attribute.formatted": "formatted",
+            "user.attribute.country": "country",
+            "user.attribute.postal_code": "postal_code",
+            "userinfo.token.claim": "true",
+            "user.attribute.street": "street",
+            "id.token.claim": "true",
+            "user.attribute.region": "region",
+            "access.token.claim": "true",
+            "user.attribute.locality": "locality"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5366f6e0-109c-4e73-8773-f273679ffc1e",
+      "name": "email",
+      "description": "OpenID Connect built-in scope: email",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true",
+        "display.on.consent.screen": "true",
+        "consent.screen.text": "${emailScopeConsentText}"
+      },
+      "protocolMappers": [
+        {
+          "id": "77c745ee-f58b-4f0e-95cc-fdb438481236",
+          "name": "email",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "email",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "email",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "b6b2d8f9-cc72-411c-98a3-0649bd9addc0",
+          "name": "email verified",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "emailVerified",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "email_verified",
+            "jsonType.label": "boolean"
+          }
+        }
+      ]
+    },
+    {
+      "id": "696921ac-ad01-4729-b181-f688a3ac1ab6",
+      "name": "microprofile-jwt",
+      "description": "Microprofile - JWT built-in scope",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true",
+        "display.on.consent.screen": "false"
+      },
+      "protocolMappers": [
+        {
+          "id": "afbdc6ca-cf0e-42bb-868e-15075c238979",
+          "name": "upn",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "username",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "upn",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "3209a996-2f62-49bf-94e8-989b2f32cb12",
+          "name": "groups",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-realm-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "multivalued": "true",
+            "userinfo.token.claim": "true",
+            "user.attribute": "foo",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "groups",
+            "jsonType.label": "String"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9d9929cd-c1ea-4a66-bc41-f700984cc946",
+      "name": "offline_access",
+      "description": "OpenID Connect built-in scope: offline_access",
+      "protocol": "openid-connect",
+      "attributes": {
+        "consent.screen.text": "${offlineAccessScopeConsentText}",
+        "display.on.consent.screen": "true"
+      }
+    },
+    {
+      "id": "37b4ed4f-e058-43c3-9890-391b4709779a",
+      "name": "phone",
+      "description": "OpenID Connect built-in scope: phone",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true",
+        "display.on.consent.screen": "true",
+        "consent.screen.text": "${phoneScopeConsentText}"
+      },
+      "protocolMappers": [
+        {
+          "id": "f7d70aec-4829-43d0-a26c-9a41bc7b99a6",
+          "name": "phone number verified",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "phoneNumberVerified",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "phone_number_verified",
+            "jsonType.label": "boolean"
+          }
+        },
+        {
+          "id": "bc04d34d-89a9-4e85-9e0a-8c1192ff34ba",
+          "name": "phone number",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "phoneNumber",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "phone_number",
+            "jsonType.label": "String"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9bdb9ae1-03c6-49c3-a171-4b93349c71d0",
+      "name": "profile",
+      "description": "OpenID Connect built-in scope: profile",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true",
+        "display.on.consent.screen": "true",
+        "consent.screen.text": "${profileScopeConsentText}"
+      },
+      "protocolMappers": [
+        {
+          "id": "2ec80785-292a-4404-baf8-3c7be050d214",
+          "name": "given name",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "firstName",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "given_name",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "0f06f7bd-1d21-4c28-b9a1-bbac3c7f08cd",
+          "name": "middle name",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "middleName",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "middle_name",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "bf69824e-50dd-408b-b427-77690ae598ba",
+          "name": "locale",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "locale",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "locale",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "c063ead4-45e2-4c7d-8bdb-ae1e12eff15e",
+          "name": "profile",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "profile",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "profile",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "b9c25e55-06f3-4cd3-9d75-35b2329c80eb",
+          "name": "username",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "username",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "preferred_username",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "b02f4d44-b6e3-477f-8952-e097ad680418",
+          "name": "full name",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-full-name-mapper",
+          "consentRequired": false,
+          "config": {
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "userinfo.token.claim": "true"
+          }
+        },
+        {
+          "id": "f7d39f1e-1051-49d0-a528-0518ae2fe3e4",
+          "name": "website",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "website",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "website",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "4dbcea01-e09c-44a0-9583-75134481ed42",
+          "name": "birthdate",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "birthdate",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "birthdate",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "8686d8ee-a0a2-4980-8f47-97c7bec4039f",
+          "name": "nickname",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "nickname",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "nickname",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "ee662e7c-55e2-4384-99f3-556565ed66a4",
+          "name": "updated at",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "updatedAt",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "updated_at",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "deec085f-4e71-40e0-9771-39a17ec9e816",
+          "name": "gender",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "gender",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "gender",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "774948f6-9816-4204-8573-6d057929052f",
+          "name": "family name",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-property-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "lastName",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "family_name",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "23b0530f-c404-421f-adff-8210bdc4f230",
+          "name": "zoneinfo",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "zoneinfo",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "zoneinfo",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "7c5d28af-4fad-46e1-809e-dd1f3da495df",
+          "name": "picture",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "userinfo.token.claim": "true",
+            "user.attribute": "picture",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "picture",
+            "jsonType.label": "String"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0abffa37-696f-414f-9ea5-bf5c8819991e",
+      "name": "role_list",
+      "description": "SAML role list",
+      "protocol": "saml",
+      "attributes": {
+        "consent.screen.text": "${samlRoleListScopeConsentText}",
+        "display.on.consent.screen": "true"
+      },
+      "protocolMappers": [
+        {
+          "id": "d5d015d9-284d-49e0-a611-98e5ee508726",
+          "name": "role list",
+          "protocol": "saml",
+          "protocolMapper": "saml-role-list-mapper",
+          "consentRequired": false,
+          "config": {
+            "single": "false",
+            "attribute.nameformat": "Basic",
+            "attribute.name": "Role"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28834ff0-2afe-4506-b990-d9f4adec085b",
+      "name": "roles",
+      "description": "OpenID Connect scope for add user roles to the access token",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "false",
+        "display.on.consent.screen": "true",
+        "consent.screen.text": "${rolesScopeConsentText}"
+      },
+      "protocolMappers": [
+        {
+          "id": "6e2ca381-e1a3-44d9-bd42-821d4d219c59",
+          "name": "realm roles",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-realm-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.attribute": "foo",
+            "access.token.claim": "true",
+            "claim.name": "realm_access.roles",
+            "jsonType.label": "String",
+            "multivalued": "true"
+          }
+        },
+        {
+          "id": "7422b01f-a1ad-4fd3-a34f-d4d5f2041591",
+          "name": "audience resolve",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-resolve-mapper",
+          "consentRequired": false,
+          "config": {}
+        },
+        {
+          "id": "8f0fe0f4-2d25-49e1-a729-be429f49d815",
+          "name": "client roles",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-client-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.attribute": "foo",
+            "access.token.claim": "true",
+            "claim.name": "resource_access.${client_id}.roles",
+            "jsonType.label": "String",
+            "multivalued": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "81764cb5-b453-497e-a422-e5c02ddec1e5",
+      "name": "web-origins",
+      "description": "OpenID Connect scope for add allowed web origins to the access token",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "false",
+        "display.on.consent.screen": "false",
+        "consent.screen.text": ""
+      },
+      "protocolMappers": [
+        {
+          "id": "6afcbcfa-5586-4db1-811c-ac661d541385",
+          "name": "allowed web origins",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-allowed-origins-mapper",
+          "consentRequired": false,
+          "config": {}
+        }
+      ]
+    }
+  ],
+  "defaultDefaultClientScopes": [
+    "role_list",
+    "profile",
+    "email",
+    "roles",
+    "web-origins"
+  ],
+  "defaultOptionalClientScopes": [
+    "offline_access",
+    "address",
+    "phone",
+    "microprofile-jwt"
+  ],
+  "browserSecurityHeaders": {
+    "contentSecurityPolicyReportOnly": "",
+    "xContentTypeOptions": "nosniff",
+    "xRobotsTag": "none",
+    "xFrameOptions": "SAMEORIGIN",
+    "contentSecurityPolicy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+    "xXSSProtection": "1; mode=block",
+    "strictTransportSecurity": "max-age=31536000; includeSubDomains"
+  },
+  "smtpServer": {},
+  "eventsEnabled": false,
+  "eventsListeners": [
+    "jboss-logging"
+  ],
+  "enabledEventTypes": [],
+  "adminEventsEnabled": false,
+  "adminEventsDetailsEnabled": false,
+  "components": {
+    "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy": [
+      {
+        "id": "306f089b-bb31-4950-8eff-15ee829fd29b",
+        "name": "Allowed Protocol Mapper Types",
+        "providerId": "allowed-protocol-mappers",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {
+          "allowed-protocol-mapper-types": [
+            "oidc-usermodel-attribute-mapper",
+            "saml-user-attribute-mapper",
+            "oidc-usermodel-property-mapper",
+            "oidc-full-name-mapper",
+            "saml-user-property-mapper",
+            "saml-role-list-mapper",
+            "oidc-address-mapper",
+            "oidc-sha256-pairwise-sub-mapper"
+          ]
+        }
+      },
+      {
+        "id": "cdbcab44-09c2-4702-bfbd-a3009a337b24",
+        "name": "Allowed Client Scopes",
+        "providerId": "allowed-client-templates",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {
+          "allow-default-scopes": [
+            "true"
+          ]
+        }
+      },
+      {
+        "id": "e4945f2a-8705-43dc-8819-53ecba1e6a38",
+        "name": "Allowed Client Scopes",
+        "providerId": "allowed-client-templates",
+        "subType": "authenticated",
+        "subComponents": {},
+        "config": {
+          "allow-default-scopes": [
+            "true"
+          ]
+        }
+      },
+      {
+        "id": "8fb00768-8b1d-4b93-aa3c-955453f475c8",
+        "name": "Allowed Protocol Mapper Types",
+        "providerId": "allowed-protocol-mappers",
+        "subType": "authenticated",
+        "subComponents": {},
+        "config": {
+          "allowed-protocol-mapper-types": [
+            "oidc-usermodel-property-mapper",
+            "oidc-usermodel-attribute-mapper",
+            "oidc-sha256-pairwise-sub-mapper",
+            "saml-user-attribute-mapper",
+            "saml-role-list-mapper",
+            "oidc-address-mapper",
+            "saml-user-property-mapper",
+            "oidc-full-name-mapper"
+          ]
+        }
+      },
+      {
+        "id": "f61223b5-6828-4743-a6d3-5b1427c88996",
+        "name": "Consent Required",
+        "providerId": "consent-required",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {}
+      },
+      {
+        "id": "179ef8b4-56af-4df2-8ff7-8acdde1a2a81",
+        "name": "Full Scope Disabled",
+        "providerId": "scope",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {}
+      },
+      {
+        "id": "e039810b-bba8-4740-910d-c37c839b4dd5",
+        "name": "Max Clients Limit",
+        "providerId": "max-clients",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {
+          "max-clients": [
+            "200"
+          ]
+        }
+      },
+      {
+        "id": "8f29dadb-7fb0-4056-aee7-f14ff4b884f2",
+        "name": "Trusted Hosts",
+        "providerId": "trusted-hosts",
+        "subType": "anonymous",
+        "subComponents": {},
+        "config": {
+          "host-sending-registration-request-must-match": [
+            "true"
+          ],
+          "client-uris-must-match": [
+            "true"
+          ]
+        }
+      }
+    ],
+    "org.keycloak.keys.KeyProvider": [
+      {
+        "id": "f585f0c2-7878-49f5-a434-ec3471d94ad0",
+        "name": "hmac-generated",
+        "providerId": "hmac-generated",
+        "subComponents": {},
+        "config": {
+          "priority": [
+            "100"
+          ],
+          "algorithm": [
+            "HS256"
+          ]
+        }
+      },
+      {
+        "id": "a3663df9-a4d5-450b-96e8-a264ecb64923",
+        "name": "rsa-generated",
+        "providerId": "rsa-generated",
+        "subComponents": {},
+        "config": {
+          "priority": [
+            "100"
+          ]
+        }
+      },
+      {
+        "id": "84a0bd28-be0b-4edc-92eb-4c8f5ae652ab",
+        "name": "aes-generated",
+        "providerId": "aes-generated",
+        "subComponents": {},
+        "config": {
+          "priority": [
+            "100"
+          ]
+        }
+      }
+    ]
+  },
+  "internationalizationEnabled": false,
+  "supportedLocales": [],
+  "authenticationFlows": [
+    {
+      "id": "1f4187d7-c2dc-4e12-9a10-4e20d36fb8da",
+      "alias": "Account verification options",
+      "description": "Method with which to verity the existing account",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "idp-email-verification",
+          "requirement": "ALTERNATIVE",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "ALTERNATIVE",
+          "priority": 20,
+          "flowAlias": "Verify Existing Account by Re-authentication",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "e7b38dc5-6133-438b-8b65-335a840cf7ac",
+      "alias": "Authentication Options",
+      "description": "Authentication options.",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "basic-auth",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "basic-auth-otp",
+          "requirement": "DISABLED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "auth-spnego",
+          "requirement": "DISABLED",
+          "priority": 30,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "e830ece1-6baf-4c69-8911-6e58cc910369",
+      "alias": "Browser - Conditional OTP",
+      "description": "Flow to determine if the OTP is required for the authentication",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "conditional-user-configured",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "auth-otp-form",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "a15aa84b-28f8-47cd-b5e7-9f8ac9aa87c6",
+      "alias": "Direct Grant - Conditional OTP",
+      "description": "Flow to determine if the OTP is required for the authentication",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "conditional-user-configured",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "direct-grant-validate-otp",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "fd1e6ab3-862c-47d0-9d9c-dc6aab6b205d",
+      "alias": "First broker login - Conditional OTP",
+      "description": "Flow to determine if the OTP is required for the authentication",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "conditional-user-configured",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "auth-otp-form",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "6f08f91d-22a1-44f1-9cde-3e67fcbc7c88",
+      "alias": "Handle Existing Account",
+      "description": "Handle what to do if there is existing account with same email/username like authenticated identity provider",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "idp-confirm-link",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "flowAlias": "Account verification options",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "e92e2b03-5c71-499f-97b8-32ee7fdf2721",
+      "alias": "Reset - Conditional OTP",
+      "description": "Flow to determine if the OTP should be reset or not. Set to REQUIRED to force.",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "conditional-user-configured",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "reset-otp",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "78c1bc99-4cd2-4797-8b44-358dab29079c",
+      "alias": "User creation or linking",
+      "description": "Flow for the existing/non-existing user alternatives",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticatorConfig": "create unique user config",
+          "authenticator": "idp-create-user-if-unique",
+          "requirement": "ALTERNATIVE",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "ALTERNATIVE",
+          "priority": 20,
+          "flowAlias": "Handle Existing Account",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "1a7f6482-0e55-48ef-9d06-a4dfcf716edf",
+      "alias": "Verify Existing Account by Re-authentication",
+      "description": "Reauthentication of existing account",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "idp-username-password-form",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "CONDITIONAL",
+          "priority": 20,
+          "flowAlias": "First broker login - Conditional OTP",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "0c757fe4-521a-4b85-bfaf-f5dac569c914",
+      "alias": "browser",
+      "description": "browser based authentication",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "auth-cookie",
+          "requirement": "ALTERNATIVE",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "auth-spnego",
+          "requirement": "DISABLED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "identity-provider-redirector",
+          "requirement": "ALTERNATIVE",
+          "priority": 25,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "ALTERNATIVE",
+          "priority": 30,
+          "flowAlias": "forms",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "fd6a84ef-632b-46c1-9adb-05fc995d4a81",
+      "alias": "clients",
+      "description": "Base authentication for clients",
+      "providerId": "client-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "client-secret",
+          "requirement": "ALTERNATIVE",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "client-jwt",
+          "requirement": "ALTERNATIVE",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "client-secret-jwt",
+          "requirement": "ALTERNATIVE",
+          "priority": 30,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "client-x509",
+          "requirement": "ALTERNATIVE",
+          "priority": 40,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "265f0d51-2ebe-4d6c-a78e-54bb3fb07ac3",
+      "alias": "direct grant",
+      "description": "OpenID Connect Resource Owner Grant",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "direct-grant-validate-username",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "direct-grant-validate-password",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "CONDITIONAL",
+          "priority": 30,
+          "flowAlias": "Direct Grant - Conditional OTP",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "888d8bce-fe08-4d5a-9a53-9cfb38574b48",
+      "alias": "docker auth",
+      "description": "Used by Docker clients to authenticate against the IDP",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "docker-http-basic-authenticator",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "c83561a9-b3e7-4a1c-8556-e6d71d746616",
+      "alias": "first broker login",
+      "description": "Actions taken after first broker login with identity provider account, which is not yet linked to any Keycloak account",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticatorConfig": "review profile config",
+          "authenticator": "idp-review-profile",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "flowAlias": "User creation or linking",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "01938444-d186-4c6b-925f-53519892878e",
+      "alias": "forms",
+      "description": "Username, password, otp and other auth forms.",
+      "providerId": "basic-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "auth-username-password-form",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "CONDITIONAL",
+          "priority": 20,
+          "flowAlias": "Browser - Conditional OTP",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "b43b0c39-5986-422e-8f76-cf3112163c0e",
+      "alias": "http challenge",
+      "description": "An authentication flow based on challenge-response HTTP Authentication Schemes",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "no-cookie-redirect",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "flowAlias": "Authentication Options",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "08c28810-6d06-4c59-8299-dcae7fd47e1b",
+      "alias": "registration",
+      "description": "registration flow",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "registration-page-form",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "flowAlias": "registration form",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "4b84d7d4-d105-4972-8cef-3f5a044a04e9",
+      "alias": "registration form",
+      "description": "registration form",
+      "providerId": "form-flow",
+      "topLevel": false,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "registration-user-creation",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "registration-profile-action",
+          "requirement": "REQUIRED",
+          "priority": 40,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "registration-password-action",
+          "requirement": "REQUIRED",
+          "priority": 50,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "registration-recaptcha-action",
+          "requirement": "DISABLED",
+          "priority": 60,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    },
+    {
+      "id": "15410707-f970-4000-b407-086749e26da9",
+      "alias": "reset credentials",
+      "description": "Reset credentials for a user if they forgot their password or something",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "reset-credentials-choose-user",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "reset-credential-email",
+          "requirement": "REQUIRED",
+          "priority": 20,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "authenticator": "reset-password",
+          "requirement": "REQUIRED",
+          "priority": 30,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        },
+        {
+          "requirement": "CONDITIONAL",
+          "priority": 40,
+          "flowAlias": "Reset - Conditional OTP",
+          "userSetupAllowed": false,
+          "autheticatorFlow": true
+        }
+      ]
+    },
+    {
+      "id": "bd9d635f-6cea-46af-9430-f5cb7d3ebf1e",
+      "alias": "saml ecp",
+      "description": "SAML ECP Profile Authentication Flow",
+      "providerId": "basic-flow",
+      "topLevel": true,
+      "builtIn": true,
+      "authenticationExecutions": [
+        {
+          "authenticator": "http-basic-authenticator",
+          "requirement": "REQUIRED",
+          "priority": 10,
+          "userSetupAllowed": false,
+          "autheticatorFlow": false
+        }
+      ]
+    }
+  ],
+  "authenticatorConfig": [
+    {
+      "id": "ab7f6fc7-2792-4646-a202-67e75c6eda06",
+      "alias": "create unique user config",
+      "config": {
+        "require.password.update.after.registration": "false"
+      }
+    },
+    {
+      "id": "1dfcea93-d983-43d0-a5b1-c79c91e69617",
+      "alias": "review profile config",
+      "config": {
+        "update.profile.on.first.login": "missing"
+      }
+    }
+  ],
+  "requiredActions": [
+    {
+      "alias": "CONFIGURE_TOTP",
+      "name": "Configure OTP",
+      "providerId": "CONFIGURE_TOTP",
+      "enabled": true,
+      "defaultAction": false,
+      "priority": 10,
+      "config": {}
+    },
+    {
+      "alias": "terms_and_conditions",
+      "name": "Terms and Conditions",
+      "providerId": "terms_and_conditions",
+      "enabled": false,
+      "defaultAction": false,
+      "priority": 20,
+      "config": {}
+    },
+    {
+      "alias": "UPDATE_PASSWORD",
+      "name": "Update Password",
+      "providerId": "UPDATE_PASSWORD",
+      "enabled": true,
+      "defaultAction": false,
+      "priority": 30,
+      "config": {}
+    },
+    {
+      "alias": "UPDATE_PROFILE",
+      "name": "Update Profile",
+      "providerId": "UPDATE_PROFILE",
+      "enabled": true,
+      "defaultAction": false,
+      "priority": 40,
+      "config": {}
+    },
+    {
+      "alias": "VERIFY_EMAIL",
+      "name": "Verify Email",
+      "providerId": "VERIFY_EMAIL",
+      "enabled": true,
+      "defaultAction": false,
+      "priority": 50,
+      "config": {}
+    },
+    {
+      "alias": "update_user_locale",
+      "name": "Update User Locale",
+      "providerId": "update_user_locale",
+      "enabled": true,
+      "defaultAction": false,
+      "priority": 1000,
+      "config": {}
+    }
+  ],
+  "browserFlow": "browser",
+  "registrationFlow": "registration",
+  "directGrantFlow": "direct grant",
+  "resetCredentialsFlow": "reset credentials",
+  "clientAuthenticationFlow": "clients",
+  "dockerAuthenticationFlow": "docker auth",
+  "attributes": {
+    "clientSessionIdleTimeout": "0",
+    "clientSessionMaxLifespan": "0"
+  },
+  "keycloakVersion": "10.0.2",
+  "userManagedAccessAllowed": false
+}

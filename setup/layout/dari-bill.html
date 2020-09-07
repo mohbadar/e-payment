@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td,
+        th,
+        p,
+        div,
+        span {
+            font-family: 'nazanin';
+            font: 12px;
+        }
+
+        .table td,
+        .table th {
+            border: 1px solid #aaa;
+            padding: 1px 0;
+            text-align: right;
+            font-size: 12px;
+        }
+
+        table {
+            width: 100%;
+            padding: 1px 0;
+            border-collapse: collapse;
+        }
+
+        .head td {
+            padding: 2px 0;
+        }
+
+        @page {
+            size: auto;
+            /* auto is the initial value */
+            /* margin:4cm  4% 4cm 2%; */
+            margin-header: 0mm;
+            margin-footer: 0mm;
+            /* header: html_myHeader;
+                footer: html_myFooter; */
+
+        }
+
+        .table td,
+        .table th {
+            padding: 1px 1px;
+            border: 1px solid #000;
+        }
+
+        .inner-table tr:first-child td,
+        .inner-table tr:first-child th {
+            border-top: 0
+        }
+
+        .inner-table tr td:first-child,
+        .inner-table tr th:first-child {
+            border-right: 0
+        }
+
+        .inner-table tr:last-child td,
+        .inner-table tr:last-child th {
+            border-bottom: 0
+        }
+
+        .inner-table tr td:last-child,
+        .inner-table tr th:last-child {
+            border-left: 0
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bg-grey {
+            background-color: #d8d8d8;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        td {
+            word-wrap: break-word;
+            text-align: center;
+            text-decoration: ivory;
+            height: 14px !important;
+        }
+
+        .no-border {
+            border: none
+        }
+    </style>
+</head>
+
+<body style="direction: rtl; ">
+    <table class="table">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <!-- heading section -->
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> شماره بیل </td>
+                                    <td> 123456789 </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey">دوره میتر خوانی</td>
+                                    <td>01</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ صدور بل </td>
+                                    <td>1399-0-0</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ مکلفیت تحویل بیل </td>
+                                    <td> 1399-0-0</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- end of heading section -->
+            </td>
+            <td style="text-align:right; width: 48%; border: none; padding-right:4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> شماره بیل </td>
+                                    <td>98798789798789</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey">دوره میتر خوانی</td>
+                                    <td>01</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ صدور بل </td>
+                                    <td>1399-0-0</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ مکلفیت تحویل بیل </td>
+                                    <td> 1399-0-0</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="table" style="padding-top: 10px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">نمبر میتر</td>
+                                    <td style="width: 50%;">۸۷۸۹۷۸</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">تعرفه</td>
+                                    <td style="width: 50%;">شسیبیس</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">ضریب میتر</td>
+                                    <td style="width: 50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">فاز</td>
+                                    <td style="width: 50%; border-left: none; background-color: #aaa;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey" style="width: 30%;"> تفصیلات</td>
+                                    <td class="bg-grey" style="width: 30%;">تاریخ قراَت</td>
+                                    <td class="bg-grey" style="width: 30%;"> قراَت</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">درجه حالیه</td>
+                                    <td style="width: 30%;">01-01-1396</td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">درجه گذشته</td>
+                                    <td style="width: 30%;"> 01-01-1396 </td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width:  30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border: none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">نمبر میتر</td>
+                                    <td style="width: 50%;">۸۷۸۹۷۸</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">تعرفه</td>
+                                    <td style="width: 50%;">شسیبیس</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">ضریب میتر</td>
+                                    <td style="width: 50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;">فاز</td>
+                                    <td style="width: 50%; border-left: none; background-color: #aaa;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey" style="width: 30%;"> تفصیلات</td>
+                                    <td class="bg-grey" style="width: 30%;">تاریخ قراَت</td>
+                                    <td class="bg-grey" style="width: 30%;"> قراَت</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">درجه حالیه</td>
+                                    <td style="width: 30%;">01-01-1396</td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">درجه گذشته</td>
+                                    <td style="width: 30%;"> 01-01-1396 </td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width:  30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 10px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">خدمات مشتریان</td>
+                                    <td style="width: 0%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">حساب سابقه/نمبر حساب سابقه</td>
+                                    <td style="width: 60%;">null/null</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نمبر اشتراک</td>
+                                    <td style="width: 50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">اسم مشترک</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نام پدر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" tyle="width: 40%;"> سکونت</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> جنکشن</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> تراسفارمر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نمبر صندوق</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> کود مسیر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey " style="width: 40%;"> صرفیه برق</td>
+                                    <td class="bg-grey " style="width: 30%;"> قیمت</td>
+                                    <td class="bg-grey " style="width: 30%;"> مبلغ به افغانی</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> محاسبات</td>
+                                    <td style="width: 30%;"></td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none; font-weight: bolder; background-color: #aaa;">
+                                        مجموعه مصارف
+                                    </td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;">کمیشن بانکی</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف خدمات در یک دوره</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف قرطاسیه</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> ضایعات تراسفارمر/جریمه</td>
+
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف متفرقه</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">خدمات مشتریان</td>
+                                    <td style="width: 0%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">حساب سابقه/نمبر حساب سابقه</td>
+                                    <td style="width: 60%;">null/null</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نمبر اشتراک</td>
+                                    <td style="width: 50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;">اسم مشترک</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نام پدر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" tyle="width: 40%;"> سکونت</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> جنکشن</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> تراسفارمر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> نمبر صندوق</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> کود مسیر</td>
+                                    <td style="width: 60%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey " style="width: 40%;"> صرفیه برق</td>
+                                    <td class="bg-grey " style="width: 30%;"> قیمت</td>
+                                    <td class="bg-grey " style="width: 30%;"> مبلغ به افغانی</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> محاسبات</td>
+                                    <td style="width: 30%;"></td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none; font-weight: bolder; background-color: #aaa;">
+                                        مجموعه مصارف
+                                    </td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;">کمیشن بانکی</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف خدمات در یک دوره</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف قرطاسیه</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> ضایعات تراسفارمر/جریمه</td>
+
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> مصارف متفرقه</td>
+                                    <td style="width: 25%; border-left: none;"></td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 0px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 100%; font-weight: bolder; background-color: #aaa;"> نوت واعلانات
+                                    </td>
+                                </tr>
+                                <tr style="height: 83.5px;">
+                                    <td style="width: 100%; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:left;width:60%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 60%; font-weight: bolder;  background-color: #aaa;"> مجموعه مصارف
+                                        متفرقه</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مبلغ بیل</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مالیه</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مبلع قابل پرداخت</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">باقیات گذشته/دوره باقیداری</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;  background-color: #aaa;">مبلغ قابل تادیه
+                                    </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 100%; font-weight: bolder; background-color: #aaa;"> نوت واعلانات
+                                    </td>
+                                </tr>
+                                <tr style="height: 83.5px;">
+                                    <td style="width: 100%; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:left;width:60%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 60%; font-weight: bolder;  background-color: #aaa;"> مجموعه مصارف
+                                        متفرقه</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مبلغ بیل</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مالیه</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">مبلع قابل پرداخت</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;">باقیات گذشته/دوره باقیداری</td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;  background-color: #aaa;">مبلغ قابل تادیه
+                                    </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 0px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr style="height: 30px;">
+                        <td style="width : 100px"></td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr style="height: 30px;">
+                        <td style="width : 100px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="table">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <!-- heading section -->
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> جنکشن </td>
+                                    <td>98798789798789</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey">دوره میتر خوانی</td>
+                                    <td>01</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ درجه حالیه </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮ ﺣﺴﺎﺏ ﺳﺎﺑﻘﻪ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮ ﺍﺷﺘﺮﺍﮎ </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮﺷﻨﺎﺳﺎﯾﯽ ﻣﺸﺘﺮﮎ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﺍﺳﻢ ﻣﺸﺘﺮﮎ </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﺎﻡ ﭘﺪﺭ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻣﺒﻠﻎ ﻗﺎﺑﻞ ﺗﺎﺩﯾﻪ </td>
+                                    <td> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- end of heading section -->
+            </td>
+            <td style="text-align:right; width: 48%; border: none; padding-right:4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:70%; padding-right: 20%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> جنکشن </td>
+                                    <td>98798789798789</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey">دوره میتر خوانی</td>
+                                    <td>01</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> تاریخ درجه حالیه </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮ ﺣﺴﺎﺏ ﺳﺎﺑﻘﻪ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮ ﺍﺷﺘﺮﺍﮎ </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﻤﺒﺮﺷﻨﺎﺳﺎﯾﯽ ﻣﺸﺘﺮﮎ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﺍﺳﻢ ﻣﺸﺘﺮﮎ </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻧﺎﻡ ﭘﺪﺭ </td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> ﻣﺒﻠﻎ ﻗﺎﺑﻞ ﺗﺎﺩﯾﻪ </td>
+                                    <td> </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:25%; padding-right: 10px; border: none;">
+                            <!-- <barcode type="qr" mode="H">barcode</barcode> -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

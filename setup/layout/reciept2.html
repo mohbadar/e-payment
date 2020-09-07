@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td,
+        th,
+        p,
+        div,
+        span {
+            font-family: 'nazanin';
+            font: 12px;
+        }
+
+        .table td,
+        .table th {
+            /* padding: 1px 0;
+            text-align: right; */
+            font-size: 14px;
+            background-color: azure;
+            text-align: center;
+            border: 1px solid gray;
+
+        }
+
+        table {
+            width: 100%;
+            padding: 1px 0;
+            border-collapse: collapse;
+        }
+
+        .head td {
+            padding: 2px 0;
+        }
+
+        @page {
+            size: auto;
+            /* auto is the initial value */
+            /* margin:4cm  4% 4cm 2%; */
+            margin-header: 0mm;
+            margin-footer: 0mm;
+            /* header: html_myHeader;
+                footer: html_myFooter; */
+
+        }
+
+        .table td,
+        .table th {
+            padding: 1px 1px;
+            /* border: 1px solid #000; */
+        }
+
+        .inner-table tr:first-child td,
+        .inner-table tr:first-child th {
+            border-top: 0
+        }
+
+        .inner-table tr td:first-child,
+        .inner-table tr th:first-child {
+            border-right: 0
+        }
+
+        .inner-table tr:last-child td,
+        .inner-table tr:last-child th {
+            border-bottom: 0
+        }
+
+        .inner-table tr td:last-child,
+        .inner-table tr th:last-child {
+            border-left: 0
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bg-grey {
+            background-color: #d8d8d8;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        td {
+            word-wrap: break-word;
+            text-align: center;
+            text-decoration: ivory;
+            height: 14px !important;
+        }
+
+        .no-border {
+            border: none
+        }
+
+        /* .watermark {
+            height: 450px;
+            width: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .watermark img {
+            max-width: 100%;
+        } */
+    </style>
+</head>
+
+    <body style="direction: rtl; ">
+        
+        <table class="table" style="width:100%; background-color: #d8d8d8;">
+            <tr>
+                <td style="text-align:right;width:33%;padding-right: 1%;vertical-align:top; border: none;">
+                    <img src="dabs_logo.png" style="max-width: 100px">
+                </td>
+                <td style="text-align:center;width:33%;vertical-align:top; border: none;">
+                    <p style="margin-top:5px;font-size: 14px; font-weight: bolder;">Bank Name</p>
+                    <p style="margin-top:5px;font-weight: bold;">رسید ت بل</p>
+                </td>
+
+                <td style="text-align:left;width:33%;padding-left:1%;vertical-align:top;padding-top:0%; border: none;">
+                    <img src="dabs_logo.png" style="max-width: 100px">
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table class="table" style="width:100%;">
+            <tr>
+                <th style="padding-right:2%; width: 20%;"> نوعیت تعرفه/کتگوری:</th>
+                <th style="width: 15%;"> دوره </th>
+                <th style="width: 15%;"> سال</th>
+                <th style="width: 15%;"> نوعه پرداخت</th>
+                <th style="width: 15%;"> شماره حساب</th>
+                <th style="width: 15%;"> اسم مشتری</th>
+            </tr>
+            <tr>
+                <td style="padding-right:2%; width: 20%;"> تست دیتا</td>
+                <td style="width: 15%;"> تست دیتا</td>
+                <td style="width: 15%;"> تست دیتا</td>
+                <td style="width: 15%;"> تست دیتا</td>
+                <td style="width: 15%;"> تست دیتا</td>
+                <td style="width: 15%;"> تست دیتا</td>
+            </tr>
+        </table>
+        <br>
+        <table class="table" style="width:100%;">
+            <tr>
+                <th style="padding-right:2%; width: 40%;"> تاریخ پرداخت</th>
+                <th style="width: 30%;"> شماره بیل </th>
+                <th style="width: 25%;"> شماره رسید</th>
+            </tr>
+            <tr>
+                <td style="padding-right:2%; width: 40%;"> تست دیتا</td>
+                <td style="width: 30%;"> تست دیتا</td>
+                <td style="width: 25%;"> تست دیتا</td>
+            </tr>
+        </table>
+        <br>
+        <table class="table" style="width:100%;">
+            <tr>
+                <th style="padding-right:2%; width: 30%;"> باقیمانده</th>
+                <th style="width: 20%;"> پول اخذشده </th>
+                <th style="width: 20%;"> مبلغ پرداخت شده</th>
+                <th style="width: 20%;"> مبلغ بل</th>
+            </tr>
+            <tr>
+                <td style="padding-right:2%; width: 30%;"> تست دیتا</td>
+                <td style="width: 20%;"> تست دیتا</td>
+                <td style="width: 20%;"> تست دیتا</td>
+                <td style="width: 20%;"> تست دیتا</td>
+            </tr>
+        </table>
+        <br>
+        <table class="table" style="width:100%;">
+            <tr>
+                <th style="padding-right:2%; width: 40%; text-align: right; border: none;" rowspan="2"> امضاّ صراف</th>
+                <th style="width: 15%;"> نمایندگی</th>
+                <th style="width: 15%;"> غرفه</th>
+                <th style="width: 15%;"> صراف</th>
+            </tr>
+            <tr>
+                <td style="width: 20%;"> تست دیتا</td>
+                <td style="width: 20%;"> تست دیتا</td>
+                <td style="width: 20%;"> تست دیتا</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <p style="text-align: center; font-weight: bolder;">نوت : درصورت داشتن مشکل ویا گرفتن معلومت بیشتر لطفا به شماره 144
+            با برشنا تماس شوید </p>
+
+    </body>
+
+</html>

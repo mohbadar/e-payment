@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td,
+        th,
+        p,
+        div,
+        span {
+            font: 12px;
+        }
+
+        .table td,
+        .table th {
+            border: 1px solid #aaa;
+            padding: 1px 0;
+            text-align: right;
+            font-size: 12px;
+        }
+
+        table {
+            width: 100%;
+            padding: 1px 0;
+            border-collapse: collapse;
+        }
+
+        .head td {
+            padding: 2px 0;
+        }
+
+        @page {
+            size: auto;
+            /* auto is the initial value */
+            /* margin:4cm  4% 4cm 2%; */
+            margin-header: 0mm;
+            margin-footer: 0mm;
+            /* header: html_myHeader;
+                footer: html_myFooter; */
+
+        }
+
+        .table td,
+        .table th {
+            padding: 1px 1px;
+            border: 1px solid #000;
+        }
+
+        .inner-table tr:first-child td,
+        .inner-table tr:first-child th {
+            border-top: 0
+        }
+
+        .inner-table tr td:first-child,
+        .inner-table tr th:first-child {
+            border-right: 0
+        }
+
+        .inner-table tr:last-child td,
+        .inner-table tr:last-child th {
+            border-bottom: 0
+        }
+
+        .inner-table tr td:last-child,
+        .inner-table tr th:last-child {
+            border-left: 0
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bg-grey {
+            background-color: #d8d8d8;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        td {
+            word-wrap: break-word;
+            text-align: center;
+            text-decoration: ivory;
+            height: 14px !important;
+        }
+
+        .no-border {
+            border: none
+        }
+    </style>
+</head>
+
+<body style="direction: rtl; ">
+    <table class="table">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <!-- heading section -->
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> $billNoLabel </td>
+                                    <td> $billNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $cycleLabel </td>
+                                    <td> $cycle </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $dateOfIssueBillLabel </td>
+                                    <td> $dateOfIssueBill </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $billDeliveryDateLabel </td>
+                                    <td> $billDeliveryDate </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- end of heading section -->
+            </td>
+            <td style="text-align:right; width: 48%; border: none; padding-right:4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> $billNoLabel </td>
+                                    <td> $billNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $cycleLabel </td>
+                                    <td> $cycle </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $dateOfIssueBillLabel </td>
+                                    <td> $dateOfIssueBill </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $billDeliveryDateLabel </td>
+                                    <td> $billDeliveryDate </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="table" style="padding-top: 10px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $meterNoLabel </td>
+                                    <td style="width: 50%;"> $meterNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $tariffLabel </td>
+                                    <td style="width: 50%;"> $tariff </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $meterRatioLabel </td>
+                                    <td style="width: 50%;"> $meterRatio </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $phaseLabel </td>
+                                    <td style="width: 50%; border-left: none; background-color: #aaa;"> $phase </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey" style="width: 30%;"> $descriptionLabel </td>
+                                    <td class="bg-grey" style="width: 30%;"> $readingDateLabel </td>
+                                    <td class="bg-grey" style="width: 30%;"> $readingLabel </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $currentRatingLabel </td>
+                                    <td style="width: 30%;"> $currentReadingDate </td>
+                                    <td style="width: 30%;"> $currentReading </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $previousRatingLabel </td>
+                                    <td style="width: 30%;"> $previousReadingDate </td>
+                                    <td style="width: 30%;"> $previousReading </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width:  30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border: none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $meterNoLabel </td>
+                                    <td style="width: 50%;"> $meterNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $tariffLabel </td>
+                                    <td style="width: 50%;"> $tariff </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $meterRatioLabel </td>
+                                    <td style="width: 50%;"> $meterRatio </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 50%;"> $phaseLabel </td>
+                                    <td style="width: 50%; border-left: none; background-color: #aaa;"> $phase </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey" style="width: 30%;"> $descriptionLabel </td>
+                                    <td class="bg-grey" style="width: 30%;"> $readingDateLabel </td>
+                                    <td class="bg-grey" style="width: 30%;"> $readingLabel </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $currentRatingLabel </td>
+                                    <td style="width: 30%;"> $currentReadingDate </td>
+                                    <td style="width: 30%;"> $currentReading </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $previousRatingLabel </td>
+                                    <td style="width: 30%;"> $previousReadingDate </td>
+                                    <td style="width: 30%;"> $previousReading </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width:  30%;"></td>
+                                    <td style="border: none; background-color:#aaa; width: 30%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 10px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $customerServiceLabel </td>
+                                    <td style="width: 0%;"> $customerService</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $previousAccountNoLabel </td>
+                                    <td style="width: 60%;"> $previousAccountNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $subscriptionNoLabel </td>
+                                    <td style="width: 50%;">$subscriptionNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $applicantNameLabel </td>
+                                    <td style="width: 60%;"> $applicantName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $fatherNameLabel </td>
+                                    <td style="width: 60%;"> $fatherName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" tyle="width: 40%;"> $residenceLabel </td>
+                                    <td style="width: 60%;"> $residence </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $junctionLabel </td>
+                                    <td style="width: 60%;"> $junction </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $transformerLabel </td>
+                                    <td style="width: 60%;"> $transformer </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $meterBoxNoLabel </td>
+                                    <td style="width: 60%;"> $meterBoxNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $routeCodeLabel </td>
+                                    <td style="width: 60%;"> $routeCode </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey " style="width: 40%;"> $consumptionLabel </td>
+                                    <td class="bg-grey " style="width: 30%;"> $priceLabel </td>
+                                    <td class="bg-grey " style="width: 30%;"> $priceInAfghaniLabel </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $calculations </td>
+                                    <td style="width: 30%;"> $price </td>
+                                    <td style="width: 30%;"> $priceInAfghani </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none; font-weight: bolder; background-color: #aaa;">
+                                        $totalConsumptionLabel
+                                    </td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $bankingCommissionLabel </td>
+                                    <td style="width: 25%; border-left: none;">$bankingCommission</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $consumptionServicesInOneCycleLabel </td>
+                                    <td style="width: 25%; border-left: none;">$consumptionServicesInOneCycle</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $consumptionStationeryLabel </td>
+                                    <td style="width: 25%; border-left: none;"> $consumptionStationery </td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $penaltyLabel </td>
+
+                                    <td style="width: 25%; border-left: none;">$penalty</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $otherConsumptionLabel </td>
+                                    <td style="width: 25%; border-left: none;"> $otherConsumption </td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $customerServiceLabel </td>
+                                    <td style="width: 0%;"> $customerService</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $previousAccountNoLabel </td>
+                                    <td style="width: 60%;"> $previousAccountNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $subscriptionNoLabel </td>
+                                    <td style="width: 50%;">$subscriptionNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $applicantNameLabel </td>
+                                    <td style="width: 60%;"> $applicantName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $fatherNameLabel </td>
+                                    <td style="width: 60%;"> $fatherName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" tyle="width: 40%;"> $residenceLabel </td>
+                                    <td style="width: 60%;"> $residence </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $junctionLabel </td>
+                                    <td style="width: 60%;"> $junction </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $transformerLabel </td>
+                                    <td style="width: 60%;"> $transformer </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $meterBoxNoLabel </td>
+                                    <td style="width: 60%;"> $meterBoxNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 40%;"> $routeCodeLabel </td>
+                                    <td style="width: 60%;"> $routeCode </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:60%; border: none;">
+                            <table class="table">
+                                <tr style="background-color: #aaa;">
+                                    <td class="bg-grey " style="width: 40%;"> $consumptionLabel </td>
+                                    <td class="bg-grey " style="width: 30%;"> $priceLabel </td>
+                                    <td class="bg-grey " style="width: 30%;"> $priceInAfghaniLabel </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"> $calculationsLabel </td>
+                                    <td style="width: 30%;"> $price </td>
+                                    <td style="width: 30%;"> $priceInAfghani </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                    <td style="width: 30%; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%; border: none; font-weight: bolder; background-color: #aaa;">
+                                        $totalConsumptionLabel
+                                    </td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                    <td style="width: 30%; border: none; background-color: #aaa;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $bankingCommissionLabel </td>
+                                    <td style="width: 25%; border-left: none;">$bankingCommission</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $consumptionServicesInOneCycleLabel </td>
+                                    <td style="width: 25%; border-left: none;">$consumptionServicesInOneCycle</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $consumptionStationeryLabel </td>
+                                    <td style="width: 25%; border-left: none;"> $consumptionStationery </td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $penaltyLabel </td>
+
+                                    <td style="width: 25%; border-left: none;">$penalty</td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;"> $otherConsumptionLabel </td>
+                                    <td style="width: 25%; border-left: none;"> $otherConsumption </td>
+                                    <td style="width: 25%; border-right: none; "></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 0px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 100%; font-weight: bolder; background-color: #aaa;"> $noteLabel
+                                    </td>
+                                </tr>
+                                <tr style="height: 83.5px;">
+                                    <td style="width: 100%; ">$note</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:left;width:60%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 60%; font-weight: bolder;  background-color: #aaa;">
+                                        $totalOtherConsumptionLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $billAmountLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $billAmount </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $taxLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $tax </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $payableAmountLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $payableAmount
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $remainsOfThePastLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;">$remainsOfThePast
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;  background-color: #aaa;">
+                                        $totalPayableAmountLabel
+                                    </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $totalPayableAmount
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:left;width:40%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 100%; font-weight: bolder; background-color: #aaa;"> $noteLabel
+                                    </td>
+                                </tr>
+                                <tr style="height: 83.5px;">
+                                    <td style="width: 100%; ">$note</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:left;width:60%; border: none;">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"
+                                        style="width: 60%; font-weight: bolder;  background-color: #aaa;">
+                                        $totalOtherConsumptionLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $billAmountLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $billAmount </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $taxLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $tax </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $payableAmountLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $payableAmount
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;"> $remainsOfThePastLabel </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;">$remainsOfThePast
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey" style="width: 60%;  background-color: #aaa;">
+                                        $totalPayableAmountLabel
+                                    </td>
+                                    <td class="bg-grey" style="width: 40%; background-color: #aaa;"> $totalPayableAmount
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table" style="padding-top: 0px;">
+        <tr>
+            <td style="text-align:left;width:48%; border: none; ">
+                <table class="table">
+                    <tr style="height: 30px;">
+                        <td style="width : 100px"></td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align:right;width:48%; border:none; padding-right: 4%;">
+                <table class="table">
+                    <tr style="height: 30px;">
+                        <td style="width : 100px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="table">
+        <tr>
+            <td style="text-align:left;width:48%; border: none;">
+                <!-- heading section -->
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td class="bg-grey"> $junctionLabel </td>
+                                    <td> $junction </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $cycleLabel </td>
+                                    <td> $cycle </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $currentReadingDateLabel </td>
+                                    <td> $currentReadingDate </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $previousAccountNoLabel </td>
+                                    <td> $previousAccountNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $subscriptionNoLabel </td>
+                                    <td>$subscriptionNo </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $identificationNumberLabel </td>
+                                    <td> $identificationNumber </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $applicantNameLabel </td>
+                                    <td> $applicantName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey"> $fatherNameLabel </td>
+                                    <td> $fatherName </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-grey">
+                                        $totalPayableAmountLabel
+                                    </td>
+                                    <td> $totalPayableAmount
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- end of heading section -->
+            </td>
+            <td style="text-align:right; width: 48%; border: none; padding-right:4%;">
+                <table class="table">
+                    <tr>
+                        <td style="text-align:right;width:70%; padding-right: 20%; border: none; ">
+                            <table class="table">
+                                <tr>
+                                    <td style="text-align:right;width:50%; padding-right: 50%; border: none; ">
+                                        <table class="table">
+                                            <tr>
+                                                <td class="bg-grey"> $junctionLabel </td>
+                                                <td> $junction </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $cycleLabel </td>
+                                                <td> $cycle </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $currentReadingDateLabel </td>
+                                                <td> $currentReadingDate </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $previousAccountNoLabel </td>
+                                                <td> $previousAccountNo </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $subscriptionNoLabel </td>
+                                                <td>$subscriptionNo </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $identificationNumberLabel </td>
+                                                <td> $identificationNumber </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $applicantNameLabel </td>
+                                                <td> $applicantName </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey"> $fatherNameLabel </td>
+                                                <td> $fatherName </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-grey">
+                                                    $totalPayableAmountLabel
+                                                </td>
+                                                <td> $totalPayableAmount
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="text-align:right;width:25%; padding-right: 10px; border: none;">
+                            <!-- <barcode type="qr" mode="H">barcode</barcode> -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

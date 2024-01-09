@@ -1,6 +1,6 @@
 ## Electronical Payment System
 
-The project goal is to concentrate in an e-commerce gateway to make different technologies and PSPs work to gather for providing more transparent, easy-to-use, reliable services in the financial technology market.
+The project goal is to concentrate in an e-commerce gateway to make different technologies and Payment Service Providers (PSPs) work to gather for providing more transparent, easy-to-use, reliable services in the financial technology market.
 
 
 
